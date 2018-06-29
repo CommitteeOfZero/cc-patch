@@ -1,0 +1,8 @@
+{
+  "__schema_version": 2,
+  "channels": {
+    "stable-win32": {
+      "intVersion": 1
+    }
+  }
+}
