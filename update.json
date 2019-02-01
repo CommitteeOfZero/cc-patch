@@ -3,6 +3,9 @@
   "channels": {
     "stable-win32": {
       "intVersion": 1
+    },
+    "stable-steam-win32": {
+      "intVersion": 2
     }
   }
 }
