@@ -1,0 +1,9 @@
+# MSVC 2015's MSBuild executable. This is probably already correct.
+$msbuild = "C:\Program Files (x86)\MSBuild\14.0\Bin\msbuild.exe"
+
+# Root of your LanguageBarrier repository (https://github.com/CommitteeOfZero/LanguageBarrier/tree/multi-game), i.e. where LanguageBarrier.sln is
+$languagebarrier_dir = $env:USERPROFILE + "\Documents\Visual Studio 2015\Projects\LanguageBarrier"
+# Build configuration. This is probably already correct.
+$languagebarrier_configuration = "dinput8-Release"
+# Add things that need to be on your PATH for this build here, e.g. Visual C++ 2015 binary dir, Qt 5.x for MSVC 2015 binary dir, 7-Zip binary dir
+$env:path = "C:\Qt\5.9.2\msvc2015\bin;G:\VS2015_2\VC;" + $env:path

@@ -1,0 +1,488 @@
+{
+  "__schema_version": 2,
+  "appdatadir": "Committee of Zero\\CCSteam",
+  "patchName": "[CoZ] CHAOS;CHILD Steam Patch (1.1)",
+  "patchVersion": "1.1",
+  "base": {
+    "hookText": true,
+    "improveDialogueOutlines": false,
+    "redoDialogueWordwrap": true,
+    "textureFiltering": true,
+    "exitBlackScreenFix": false,
+    "overrideLoopMetadata": true,
+    "fixPlayLevelNullDeref": true,
+    "dialogueRedesignYOffsetShift": 11,
+    "dialogueRedesignLineHeightShift": -3,
+    "fontBFileName": "FONT_B.dds",
+    "tipReimplementation": false,
+    "ccBacklogHighlight": true,
+    "ccBacklogHighlightHeightShift": 30.0,
+    "ccBacklogHighlightSpriteHeight": 213.0,
+    "ccBacklogHighlightSpriteY": 1824.0,
+    "ccBacklogHighlightYOffsetShift": -5.0,
+    "usePoolAllocators": false,
+    "customInstGetDicEnabled": true,
+    "customInstGetDicGroup": "user1",
+    "customInstGetDicOp": 38,
+    "hijackLauncher": "LauncherC0.exe",
+    "fmv": {
+      "fonts": [
+        "SoukouMincho.ttf",
+        "Handy_Andy.otf",
+        "HighVoltage Rough.ttf",
+        "hultog.regular_0.ttf",
+        "kochi-gothic-subst.ttf",
+        "Typography Times Regular.ttf"
+      ],
+      "subs": {
+      },
+      "videoRedirection": {
+        "diseff_001a.bk2": "DISEFF_001A.bik",
+        "cc_mov005a.bk2": "cc_mov005a.bik",
+        "cc_ttl001a.bk2": "cc_ttl001a.bik",
+        "cc_ttl002a.bk2": "cc_ttl002a.bik",
+        "cc_ttl003a.bk2": "cc_ttl003a.bik",
+        "cc_ttl004a.bk2": "cc_ttl004a.bik",
+        "cc_ttl005a.bk2": "cc_ttl005a.bik",
+        "cc_ttl006a.bk2": "cc_ttl006a.bik",
+        "cc_ttl007a.bk2": "cc_ttl007a.bik",
+        "cc_ttl008a.bk2": "cc_ttl008a.bik",
+        "cc_ttl009a.bk2": "cc_ttl009a.bik",
+        "cc_ttl010a.bk2": "cc_ttl010a.bik",
+        "cc_ttl011a.bk2": "cc_ttl011a.bik",
+        "cc_ttl012a.bk2": "cc_ttl012a.bik",
+        "cc_ttl013a.bk2": "cc_ttl013a.bik",
+        "cc_ttl014a.bk2": "cc_ttl014a.bik",
+        "cc_ttl015a.bk2": "cc_ttl015a.bik",
+        "cc_ttl016a.bk2": "cc_ttl016a.bik"
+      },
+      "additionalVideos": [
+        "postcredits_001_a",
+        "postcredits_001_b",
+        "postcredits_002_a",
+        "postcredits_002_b"
+      ],
+      "audioRedirection": {
+        "postcredits_001_a.bk2": "postcredits_001_a.ogg",
+        "postcredits_001_b.bk2": "postcredits_001_b.ogg",
+        "postcredits_002_a.bk2": "postcredits_002_a.ogg",
+        "postcredits_002_b.bk2": "postcredits_002_b.ogg"
+      }
+    },
+    "physicalFileRedirection": {
+      "script.mpk": "enscript.mpk"
+    },
+    "fileRedirection": {
+      "system": {
+        "8": 0,
+        "10": 0,
+        "1": 3,
+        "3": 4,
+        "4": 5,
+        "5": 6,
+        "12": 7,
+        "13": 8,
+        "14": 9,
+        "19": 10,
+        "22": 11,
+        "23": 12,
+        "24": 13,
+        "25": 14,
+        "26": 15,
+        "27": 16,
+        "30": 17,
+        "32": 101,
+        "15": 105,
+        "17": 106,
+        "21": 239,
+        "0": 355
+      },
+      "manual": {
+        "0": 1,
+        "1": 2
+      },
+      "bg": {
+        "881": 18,
+        "402": 107,
+        "308": 108,
+        "310": 109,
+        "526": 111,
+        "587": 112,
+        "373": 113,
+        "560": 114,
+        "612": 115,
+        "465": 116,
+        "541": 117,
+        "581": 118,
+        "627": 119,
+        "410": 120,
+        "375": 121,
+        "374": 122,
+        "607": 123,
+        "527": 124,
+        "546": 125,
+        "648": 126,
+        "644": 127,
+        "309": 128,
+        "522": 129,
+        "559": 130,
+        "569": 131,
+        "532": 132,
+        "584": 133,
+        "636": 134,
+        "552": 135,
+        "605": 136,
+        "525": 137,
+        "110": 138,
+        "83": 139,
+        "84": 140,
+        "613": 141,
+        "567": 142,
+        "594": 143,
+        "517": 144,
+        "359": 145,
+        "543": 146,
+        "519": 147,
+        "653": 148,
+        "46": 149,
+        "82": 150,
+        "371": 151,
+        "305": 152,
+        "516": 153,
+        "515": 154,
+        "545": 155,
+        "573": 156,
+        "539": 157,
+        "655": 158,
+        "668": 159,
+        "372": 160,
+        "514": 161,
+        "535": 162,
+        "518": 163,
+        "553": 164,
+        "626": 166,
+        "623": 167,
+        "571": 168,
+        "638": 169,
+        "554": 170,
+        "604": 171,
+        "550": 172,
+        "611": 173,
+        "537": 174,
+        "32": 175,
+        "555": 176,
+        "356": 177,
+        "530": 178,
+        "628": 179,
+        "466": 180,
+        "575": 181,
+        "544": 182,
+        "311": 183,
+        "650": 184,
+        "630": 185,
+        "570": 186,
+        "534": 187,
+        "583": 188,
+        "55": 189,
+        "365": 190,
+        "366": 191,
+        "597": 192,
+        "590": 193,
+        "568": 194,
+        "633": 195,
+        "632": 196,
+        "596": 197,
+        "578": 198,
+        "563": 199,
+        "595": 200,
+        "637": 201,
+        "622": 202,
+        "377": 203,
+        "615": 204,
+        "593": 205,
+        "631": 206,
+        "562": 207,
+        "586": 208,
+        "307": 209,
+        "306": 210,
+        "557": 211,
+        "521": 212,
+        "324": 213,
+        "580": 214,
+        "414": 215,
+        "639": 216,
+        "624": 217,
+        "625": 218,
+        "649": 219,
+        "85": 220,
+        "614": 221,
+        "86": 222,
+        "528": 223,
+        "635": 224,
+        "548": 225,
+        "589": 226,
+        "312": 227,
+        "531": 228,
+        "561": 229,
+        "533": 230,
+        "572": 232,
+        "574": 233,
+        "547": 234,
+        "524": 235,
+        "592": 236,
+        "577": 237,
+        "629": 238,
+        "885": 243,
+        "886": 244,
+        "887": 245,
+        "888": 246,
+        "889": 247,
+        "890": 248,
+        "891": 249,
+        "892": 250,
+        "893": 251,
+        "894": 252,
+        "895": 253,
+        "203": 254,
+        "350": 256,
+        "77": 260,
+        "499": 261,
+        "820": 262,
+        "236": 263,
+        "242": 264,
+        "449": 265,
+        "74": 267,
+        "66": 268,
+        "245": 270,
+        "215": 273,
+        "225": 274,
+        "214": 276,
+        "652": 277,
+        "451": 278,
+        "243": 279,
+        "407": 282,
+        "401": 284,
+        "224": 286,
+        "67": 287,
+        "237": 288,
+        "651": 290,
+        "498": 291,
+        "819": 292,
+        "244": 293,
+        "256": 296,
+        "645": 298,
+        "403": 299,
+        "223": 301,
+        "452": 305,
+        "428": 306,
+        "354": 307,
+        "70": 309,
+        "257": 310,
+        "78": 313,
+        "833": 314,
+        "71": 316,
+        "81": 317,
+        "427": 318,
+        "646": 321,
+        "654": 323,
+        "453": 324,
+        "73": 328,
+        "448": 329,
+        "76": 330,
+        "69": 331,
+        "450": 334,
+        "440": 335,
+        "419": 336,
+        "255": 337,
+        "37": 338,
+        "79": 340,
+        "642": 344,
+        "641": 345,
+        "640": 346,
+        "327": 351,
+        "318": 356,
+        "325": 357,
+        "210": 359,
+        "211": 360,
+        "212": 361,
+        "213": 362,
+        "433": 363,
+        "896": 364
+      }
+    },
+    "loopMetadata": {
+      "bgm": {
+        "6": {
+          "loopStart": 925190,
+          "loopLength": 6685184
+        },
+        "12": {
+          "loopStart": 490640,
+          "loopLength": 6373191
+        },
+        "16": {
+          "loopStart": 385570,
+          "loopLength": 7088120
+        },
+        "22": {
+          "loopStart": 1016614,
+          "loopLength": 8174245
+        },
+        "26": {
+          "loopStart": 1305740,
+          "loopLength": 6105740
+        },
+        "30": {
+          "loopStart": 483165,
+          "loopLength": 5641880
+        },
+        "36": {
+          "loopStart": 267819,
+          "loopLength": 8496363
+        },
+        "44": {
+          "loopStart": 479869,
+          "loopLength": 7679869
+        },
+        "48": {
+          "loopStart": 635070,
+          "loopLength": 7724300
+        },
+        "52": {
+          "loopStart": 73389,
+          "loopLength": 8425389
+        },
+        "66": {
+          "loopStart": 504611,
+          "loopLength": 7812612
+        },
+        "81": {
+          "loopStart": 1677632,
+          "loopLength": 6835999
+        }
+      }
+    }
+  },
+  "settings": {
+    "improveDialogueOutlines": {
+      "type": "bool",
+      "setters": {
+        "improveDialogueOutlines": true,
+        "outlinePadding": 4,
+        "outlineCellWidth": 38,
+        "outlineCellHeight": 38,
+        "outlineTextureId": 350,
+        "fontOutlineAFileName": "font-outline_A.dds",
+        "fontOutlineBFileName": "font-outline_B.dds"
+      }
+    },
+    "hqFmvAudio": {
+      "type": "bool",
+      "setters": {
+        "fmv": {
+          "audioRedirection": {
+            "movie_op2.bk2": "movie_op2_hq.ogg",
+            "movie_op.bk2": "movie_op_hq.ogg",
+            "cc_ed001a.bk2": "cc_ed001a_hq.ogg",
+            "cc_ed002a.bk2": "cc_ed002a_hq.ogg",
+            "cc_mov001a.bk2": "cc_mov001a.ogg",
+            "cc_int000.bk2": "cc_int000.ogg",
+            "cc_ttl000a.bk2": "cc_ttl000a.ogg"
+          }
+        }
+      }
+    },
+    "karaokeSubs": {
+      "type": "choice",
+      "choices": {
+        "all": {
+          "fmv": {
+            "subs": {
+              "cc_ed001a.bk2": "lq_cc_ed001a.bk2.ass",
+              "cc_ed002a.bk2": "lq_cc_ed002a.bk2.ass",
+              "movie_op.bk2": "lq_movie_op.bk2.ass",
+              "movie_op2.bk2": "lq_movie_op2.bk2.ass"
+            }
+          }
+        },
+        "karaonly": {
+          "fmv": {
+            "subs": {
+              "cc_ed001a.bk2": "cc_ed001a_karaonly.ass",
+              "cc_ed002a.bk2": "cc_ed002a_karaonly.ass",
+              "movie_op.bk2": "movie_op_karaonly.ass",
+              "movie_op2.bk2": "movie_op2_karaonly.ass"
+            }
+          }
+        },
+        "tlonly": {
+          "fmv": {
+            "subs": {
+              "cc_ed001a.bk2": "cc_ed001a_tlonly.ass",
+              "cc_ed002a.bk2": "cc_ed002a_tlonly.ass",
+              "movie_op.bk2": "movie_op_tlonly.ass",
+              "movie_op2.bk2": "movie_op2_tlonly.ass"
+            }
+          }
+        }
+      }
+    },
+    "consistency": {
+      "type": "bool",
+      "setters": {
+        "physicalFileRedirection": {
+          "script.mpk": "enscript_c.mpk"
+        },
+        "fileRedirection": {
+          "system": {
+            "4": 341,
+            "17": 342,
+            "23": 343
+          },
+          "bg": {
+            "635": 255,
+            "440": 257,
+            "428": 258,
+            "466": 259,
+            "587": 266,
+            "451": 269,
+            "574": 271,
+            "354": 272,
+            "633": 275,
+            "596": 280,
+            "626": 281,
+            "597": 283,
+            "820": 285,
+            "449": 289,
+            "419": 294,
+            "637": 295,
+            "611": 297,
+            "573": 300,
+            "627": 302,
+            "365": 303,
+            "453": 304,
+            "653": 308,
+            "819": 311,
+            "452": 312,
+            "448": 315,
+            "572": 319,
+            "450": 320,
+            "590": 322,
+            "578": 325,
+            "631": 326,
+            "427": 327,
+            "377": 332,
+            "575": 333,
+            "607": 339,
+            "639": 358
+          }
+        },
+        "fmv": {
+          "videoRedirection": {
+            "cc_mov005a.bk2": "cc_mov005a-2.bik"
+          }
+        }
+      }
+    }
+  }
+}

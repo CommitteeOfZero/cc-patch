@@ -1,0 +1,390 @@
+# id,filename_on_disk,filename_in_archive
+# font replacement
+0,temp\FONT_A.dds,FONT_A.dds
+# manual.mpk
+1,cc-edited-images\manual\help00.dds,help00.dds
+2,cc-edited-images\manual\help01.dds,help01.dds
+# translated system textures
+3,cc-edited-images\system\backlog.dds,backlog.dds
+4,cc-edited-images\system\clearlist.dds,clearlist.dds
+5,cc-edited-images\system\config.dds,config.dds
+6,cc-edited-images\system\data01.dds,data01.dds
+7,cc-edited-images\system\gsysmes.dds,gsysmes.dds
+8,cc-edited-images\system\library.dds,library.dds
+9,cc-edited-images\system\loadmenu.dds,loadmenu.dds
+10,cc-edited-images\system\menuchip.dds,menuchip.dds
+11,cc-edited-images\system\music.dds,music.dds
+12,cc-edited-images\system\nameplate.dds,nameplate.dds
+13,cc-edited-images\system\qloadmenu.dds,qloadmenu.dds
+14,cc-edited-images\system\savemenu.dds,savemenu.dds
+15,cc-edited-images\system\sysmesswindow.dds,sysmesswindow.dds
+16,cc-edited-images\system\tipschips.dds,tipschips.dds
+17,cc-edited-images\system\title_chip.dds,title_chip.dds
+18,cc-edited-images\bg\Z_WARNING.png,Z_WARNING.png
+# split voice lines
+# not needed for Steam version
+### 19,voice\CC_01_03_MIY0060c.ogg,CC_01_03_MIY0060c.ogg
+### 20,voice\CC_01_03_MIY0060d.ogg,CC_01_03_MIY0060d.ogg
+### 21,voice\CC_01_04_MIY0047a.ogg,CC_01_04_MIY0047a.ogg
+### 22,voice\CC_01_04_MIY0047b.ogg,CC_01_04_MIY0047b.ogg
+### 23,voice\CC_01_04_MIY0053a.ogg,CC_01_04_MIY0053a.ogg
+### 24,voice\CC_01_04_MIY0053b.ogg,CC_01_04_MIY0053b.ogg
+### 25,voice\CC_01_04_MIY0070a.ogg,CC_01_04_MIY0070a.ogg
+### 26,voice\CC_01_04_MIY0070b.ogg,CC_01_04_MIY0070b.ogg
+### 27,voice\CC_01_05_ONE0008a.ogg,CC_01_05_ONE0008a.ogg
+### 28,voice\CC_01_05_ONE0008b.ogg,CC_01_05_ONE0008b.ogg
+### 29,voice\CC_01_08_KUN0007c.ogg,CC_01_08_KUN0007c.ogg
+### 30,voice\CC_01_08_KUN0007d.ogg,CC_01_08_KUN0007d.ogg
+### 31,voice\CC_01_10_MIY0036c.ogg,CC_01_10_MIY0036c.ogg
+### 32,voice\CC_01_10_MIY0036d.ogg,CC_01_10_MIY0036d.ogg
+### 33,voice\CC_01_12_MIY0037a.ogg,CC_01_12_MIY0037a.ogg
+### 34,voice\CC_01_12_MIY0037b.ogg,CC_01_12_MIY0037b.ogg
+### 35,voice\CC_01_12_MIY0083a.ogg,CC_01_12_MIY0083a.ogg
+### 36,voice\CC_01_12_MIY0083b.ogg,CC_01_12_MIY0083b.ogg
+### 37,voice\CC_01_13_ITH0004a.ogg,CC_01_13_ITH0004a.ogg
+### 38,voice\CC_01_13_ITH0004b.ogg,CC_01_13_ITH0004b.ogg
+### 39,voice\CC_02_04_ARI0007a.ogg,CC_02_04_ARI0007a.ogg
+### 40,voice\CC_02_04_ARI0007b.ogg,CC_02_04_ARI0007b.ogg
+### 41,voice\CC_02_07_KUN0016c.ogg,CC_02_07_KUN0016c.ogg
+### 42,voice\CC_02_07_KUN0016d.ogg,CC_02_07_KUN0016d.ogg
+### 43,voice\CC_02_07_KUN0020c.ogg,CC_02_07_KUN0020c.ogg
+### 44,voice\CC_02_07_KUN0020d.ogg,CC_02_07_KUN0020d.ogg
+### 45,voice\CC_03_01_WAT0008a.ogg,CC_03_01_WAT0008a.ogg
+### 46,voice\CC_03_01_WAT0008b.ogg,CC_03_01_WAT0008b.ogg
+### 47,voice\CC_03_04_KUN0008a.ogg,CC_03_04_KUN0008a.ogg
+### 48,voice\CC_03_04_KUN0008b.ogg,CC_03_04_KUN0008b.ogg
+### 49,voice\CC_04_03_MIY0042a.ogg,CC_04_03_MIY0042a.ogg
+### 50,voice\CC_04_03_MIY0042b.ogg,CC_04_03_MIY0042b.ogg
+### 51,voice\CC_04_03B_X480004a.ogg,CC_04_03B_X480004a.ogg
+### 52,voice\CC_04_03B_X480004b.ogg,CC_04_03B_X480004b.ogg
+### 53,voice\CC_07_01_MIY0107a.ogg,CC_07_01_MIY0107a.ogg
+### 54,voice\CC_07_01_MIY0107b.ogg,CC_07_01_MIY0107b.ogg
+### 55,voice\CC_07_01_MIY0108a.ogg,CC_07_01_MIY0108a.ogg
+### 56,voice\CC_07_01_MIY0108b.ogg,CC_07_01_MIY0108b.ogg
+### 57,voice\CC_07_01_MIY0109a.ogg,CC_07_01_MIY0109a.ogg
+### 58,voice\CC_07_01_MIY0109b.ogg,CC_07_01_MIY0109b.ogg
+### 59,voice\CC_07_07_SHI0037a.ogg,CC_07_07_SHI0037a.ogg
+### 60,voice\CC_07_07_SHI0037b.ogg,CC_07_07_SHI0037b.ogg
+### 61,voice\CC_07_10_ARI0000a.ogg,CC_07_10_ARI0000a.ogg
+### 62,voice\CC_07_10_ARI0000b.ogg,CC_07_10_ARI0000b.ogg
+### 63,voice\CC_10_02_X480002a.ogg,CC_10_02_X480002a.ogg
+### 64,voice\CC_10_02_X480002b.ogg,CC_10_02_X480002b.ogg
+### 65,voice\CC_10_08_KUN0029a.ogg,CC_10_08_KUN0029a.ogg
+### 66,voice\CC_10_08_KUN0029b.ogg,CC_10_08_KUN0029b.ogg
+### 67,voice\CC_11_01_SAK0017a.ogg,CC_11_01_SAK0017a.ogg
+### 68,voice\CC_11_01_SAK0017b.ogg,CC_11_01_SAK0017b.ogg
+### 69,voice\CC_11_02_ONE0028a.ogg,CC_11_02_ONE0028a.ogg
+### 70,voice\CC_11_02_ONE0028b.ogg,CC_11_02_ONE0028b.ogg
+### 71,voice\CC_11_02_ONE0053a.ogg,CC_11_02_ONE0053a.ogg
+### 72,voice\CC_11_02_ONE0053b.ogg,CC_11_02_ONE0053b.ogg
+### 73,voice\CC_11_05_ONE0022a.ogg,CC_11_05_ONE0022a.ogg
+### 74,voice\CC_11_05_ONE0022b.ogg,CC_11_05_ONE0022b.ogg
+### 75,voice\CC_11_09_SAK0024a.ogg,CC_11_09_SAK0024a.ogg
+### 76,voice\CC_11_09_SAK0024b.ogg,CC_11_09_SAK0024b.ogg
+### 77,voice\CC_11_11_MIY0017a.ogg,CC_11_11_MIY0017a.ogg
+### 78,voice\CC_11_11_MIY0017b.ogg,CC_11_11_MIY0017b.ogg
+### 79,voice\CC_11_11_SAK0023a.ogg,CC_11_11_SAK0023a.ogg
+### 80,voice\CC_11_11_SAK0023b.ogg,CC_11_11_SAK0023b.ogg
+### 81,voice\CC_AH_24_SHI0014a.ogg,CC_AH_24_SHI0014a.ogg
+### 82,voice\CC_AH_24_SHI0014b.ogg,CC_AH_24_SHI0014b.ogg
+### 83,voice\CC_KN_02_KUN0009a.ogg,CC_KN_02_KUN0009a.ogg
+### 84,voice\CC_KN_02_KUN0009b.ogg,CC_KN_02_KUN0009b.ogg
+### 85,voice\CC_KN_13_KAW0019a.ogg,CC_KN_13_KAW0019a.ogg
+### 86,voice\CC_KN_13_KAW0019b.ogg,CC_KN_13_KAW0019b.ogg
+### 87,voice\CC_KN_15_ONE0003a.ogg,CC_KN_15_ONE0003a.ogg
+### 88,voice\CC_KN_15_ONE0003b.ogg,CC_KN_15_ONE0003b.ogg
+### 89,voice\CC_KN_16_SHI0020a.ogg,CC_KN_16_SHI0020a.ogg
+### 90,voice\CC_KN_16_SHI0020b.ogg,CC_KN_16_SHI0020b.ogg
+### 91,voice\CC_TR_09_KUN0026a.ogg,CC_TR_09_KUN0026a.ogg
+### 92,voice\CC_TR_09_KUN0026b.ogg,CC_TR_09_KUN0026b.ogg
+### 93,voice\CC_TR_10_WAK0040a.ogg,CC_TR_10_WAK0040a.ogg
+### 94,voice\CC_TR_10_WAK0040b.ogg,CC_TR_10_WAK0040b.ogg
+### 95,voice\CC_TR_10_WAK0072a.ogg,CC_TR_10_WAK0072a.ogg
+### 96,voice\CC_TR_10_WAK0072b.ogg,CC_TR_10_WAK0072b.ogg
+### 97,voice\CC_UK_05_Z090022a.ogg,CC_UK_05_Z090022a.ogg
+### 98,voice\CC_UK_05_Z090022b.ogg,CC_UK_05_Z090022b.ogg
+### 99,voice\CC_UK_10_SHI0005a.ogg,CC_UK_10_SHI0005a.ogg
+### 100,voice\CC_UK_10_SHI0005b.ogg,CC_UK_10_SHI0005b.ogg
+# lipsync
+101,c0data\WAVTABLE.dat,WAVTABLE.dat
+# HQ FMV audio
+##102,c0data\movie_op_hq.ogg,movie_op_hq.ogg
+##103,c0data\cc_ed001a_hq.ogg,cc_ed001a_hq.ogg
+##104,c0data\cc_ed002a_hq.ogg,cc_ed002a_hq.ogg
+# map
+105,cc-edited-images\system\mapbg.dds,mapbg.dds
+106,cc-edited-images\system\mapparts.dds,mapparts.dds
+# translated BGs, QA1 batch
+107,cc-edited-images\bg\cc_ibg081a.png,cc_ibg081a.png
+108,cc-edited-images\bg\cc_eff019d.dds,cc_eff019d.dds
+109,cc-edited-images\bg\cc_eff019f.dds,cc_eff019f.dds
+###110,cc-edited-images\bg\bg0402na.png,bg0402na.png
+111,cc-edited-images\bg\cc_ibgupmovie_003_c.png,cc_ibgupmovie_003_c.png
+112,cc-edited-images\bg\cc_pbg005db.png,cc_pbg005db.png
+113,cc-edited-images\bg\cc_ibg058a_c.png,cc_ibg058a_c.png
+114,cc-edited-images\bg\cc_ibgupmovie_013_b.png,cc_ibgupmovie_013_b.png
+115,cc-edited-images\bg\cc_pbg020b.png,cc_pbg020b.png
+116,cc-edited-images\bg\cc_ibg139a.png,cc_ibg139a.png
+117,cc-edited-images\bg\cc_ibgupmovie_008_a.png,cc_ibgupmovie_008_a.png
+118,cc-edited-images\bg\cc_pbg005bb.png,cc_pbg005bb.png
+119,cc-edited-images\bg\cc_pbg031b.png,cc_pbg031b.png
+120,cc-edited-images\bg\cc_ibg092a.png,cc_ibg092a.png
+121,cc-edited-images\bg\cc_ibg058a_e.png,cc_ibg058a_e.png
+122,cc-edited-images\bg\cc_ibg058a_d.png,cc_ibg058a_d.png
+123,cc-edited-images\bg\cc_pbg016a.png,cc_pbg016a.png
+124,cc-edited-images\bg\cc_ibgupmovie_003_d.png,cc_ibgupmovie_003_d.png
+125,cc-edited-images\bg\cc_ibgupmovie_009_d.png,cc_ibgupmovie_009_d.png
+126,cc-edited-images\bg\cc_pbg045a.png,cc_pbg045a.png
+127,cc-edited-images\bg\cc_pbg042a.png,cc_pbg042a.png
+128,cc-edited-images\bg\cc_eff019e.dds,cc_eff019e.dds
+129,cc-edited-images\bg\cc_ibgupmovie_002_b.png,cc_ibgupmovie_002_b.png
+130,cc-edited-images\bg\cc_ibgupmovie_013_a.png,cc_ibgupmovie_013_a.png
+131,cc-edited-images\bg\cc_pbg001c.png,cc_pbg001c.png
+132,cc-edited-images\bg\cc_ibgupmovie_005_a.png,cc_ibgupmovie_005_a.png
+133,cc-edited-images\bg\cc_pbg005cb.png,cc_pbg005cb.png
+134,cc-edited-images\bg\cc_pbg039a.png,cc_pbg039a.png
+135,cc-edited-images\bg\cc_ibgupmovie_011_a.png,cc_ibgupmovie_011_a.png
+136,cc-edited-images\bg\cc_pbg014ab.png,cc_pbg014ab.png
+137,cc-edited-images\bg\cc_ibgupmovie_003_b.png,cc_ibgupmovie_003_b.png
+138,cc-edited-images\bg\bg0302aa.png,bg0302aa.png
+139,cc-edited-images\bg\bg0209ac.png,bg0209ac.png
+140,cc-edited-images\bg\bg0209ea.png,bg0209ea.png
+141,cc-edited-images\bg\cc_pbg020c.png,cc_pbg020c.png
+142,cc-edited-images\bg\cc_pbg001a.png,cc_pbg001a.png
+143,cc-edited-images\bg\cc_pbg006a.png,cc_pbg006a.png
+144,cc-edited-images\bg\cc_ibgupmovie_001_d.png,cc_ibgupmovie_001_d.png
+145,cc-edited-images\bg\cc_ibg050a.png,cc_ibg050a.png
+146,cc-edited-images\bg\cc_ibgupmovie_009_a.png,cc_ibgupmovie_009_a.png
+147,cc-edited-images\bg\cc_ibgupmovie_001_f.png,cc_ibgupmovie_001_f.png
+148,cc-edited-images\bg\cc_pbg049a.png,cc_pbg049a.png
+149,cc-edited-images\bg\bg0203aa4.png,bg0203aa4.png
+150,cc-edited-images\bg\bg0209aa.png,bg0209aa.png
+151,cc-edited-images\bg\cc_ibg058a_a.png,cc_ibg058a_a.png
+152,cc-edited-images\bg\cc_eff019a.png,cc_eff019a.png
+153,cc-edited-images\bg\cc_ibgupmovie_001_c.png,cc_ibgupmovie_001_c.png
+154,cc-edited-images\bg\cc_ibgupmovie_001_b.png,cc_ibgupmovie_001_b.png
+155,cc-edited-images\bg\cc_ibgupmovie_009_c.png,cc_ibgupmovie_009_c.png
+156,cc-edited-images\bg\cc_pbg002b.png,cc_pbg002b.png
+157,cc-edited-images\bg\cc_ibgupmovie_007_a.png,cc_ibgupmovie_007_a.png
+158,cc-edited-images\bg\cc_pbg050ab.png,cc_pbg050ab.png
+159,cc-edited-images\bg\ev_han003a.png,ev_han003a.png
+160,cc-edited-images\bg\cc_ibg058a_b.png,cc_ibg058a_b.png
+161,cc-edited-images\bg\cc_ibgupmovie_001_a.png,cc_ibgupmovie_001_a.png
+162,cc-edited-images\bg\cc_ibgupmovie_005_d.png,cc_ibgupmovie_005_d.png
+163,cc-edited-images\bg\cc_ibgupmovie_001_e.png,cc_ibgupmovie_001_e.png
+164,cc-edited-images\bg\cc_ibgupmovie_011_b.png,cc_ibgupmovie_011_b.png
+###165,cc-edited-images\bg\bg0402ea.png,bg0402ea.png
+166,cc-edited-images\bg\cc_pbg031a.png,cc_pbg031a.png
+167,cc-edited-images\bg\cc_pbg030a.png,cc_pbg030a.png
+168,cc-edited-images\bg\cc_pbg001e.png,cc_pbg001e.png
+169,cc-edited-images\bg\cc_pbg039c.png,cc_pbg039c.png
+170,cc-edited-images\bg\cc_ibgupmovie_011_c.png,cc_ibgupmovie_011_c.png
+171,cc-edited-images\bg\cc_pbg014aa.png,cc_pbg014aa.png
+172,cc-edited-images\bg\cc_ibgupmovie_010_a.png,cc_ibgupmovie_010_a.png
+173,cc-edited-images\bg\cc_pbg020a.png,cc_pbg020a.png
+174,cc-edited-images\bg\cc_ibgupmovie_006_a.png,cc_ibgupmovie_006_a.png
+175,cc-edited-images\bg\bg0201aa2.png,bg0201aa2.png
+176,cc-edited-images\bg\cc_ibgupmovie_011_d.png,cc_ibgupmovie_011_d.png
+177,cc-edited-images\bg\cc_ibg048b.png,cc_ibg048b.png
+178,cc-edited-images\bg\cc_ibgupmovie_004_a.png,cc_ibgupmovie_004_a.png
+179,cc-edited-images\bg\cc_pbg032a.png,cc_pbg032a.png
+180,cc-edited-images\bg\cc_ibg139b.png,cc_ibg139b.png
+181,cc-edited-images\bg\cc_pbg003b.png,cc_pbg003b.png
+182,cc-edited-images\bg\cc_ibgupmovie_009_b.png,cc_ibgupmovie_009_b.png
+183,cc-edited-images\bg\cc_eff019g.dds,cc_eff019g.dds
+184,cc-edited-images\bg\cc_pbg046b.png,cc_pbg046b.png
+185,cc-edited-images\bg\cc_pbg032c.png,cc_pbg032c.png
+186,cc-edited-images\bg\cc_pbg001d.png,cc_pbg001d.png
+187,cc-edited-images\bg\cc_ibgupmovie_005_c.png,cc_ibgupmovie_005_c.png
+188,cc-edited-images\bg\cc_pbg005ca.png,cc_pbg005ca.png
+189,cc-edited-images\bg\bg0205aa2.png,bg0205aa2.png
+190,cc-edited-images\bg\cc_ibg054a.png,cc_ibg054a.png
+191,cc-edited-images\bg\cc_ibg055a.png,cc_ibg055a.png
+192,cc-edited-images\bg\cc_pbg008ab.png,cc_pbg008ab.png
+193,cc-edited-images\bg\cc_pbg005eb.png,cc_pbg005eb.png
+194,cc-edited-images\bg\cc_pbg001b.png,cc_pbg001b.png
+195,cc-edited-images\bg\cc_pbg037ab.png,cc_pbg037ab.png
+196,cc-edited-images\bg\cc_pbg037aa.png,cc_pbg037aa.png
+197,cc-edited-images\bg\cc_pbg008aa.png,cc_pbg008aa.png
+198,cc-edited-images\bg\cc_pbg005ab.png,cc_pbg005ab.png
+199,cc-edited-images\bg\cc_ibgupmovie_013_e.png,cc_ibgupmovie_013_e.png
+200,cc-edited-images\bg\cc_pbg007a.png,cc_pbg007a.png
+201,cc-edited-images\bg\cc_pbg039b.png,cc_pbg039b.png
+202,cc-edited-images\bg\cc_pbg029a.png,cc_pbg029a.png
+203,cc-edited-images\bg\cc_ibg060a.png,cc_ibg060a.png
+204,cc-edited-images\bg\cc_pbg020e.png,cc_pbg020e.png
+205,cc-edited-images\bg\cc_pbg005fb.png,cc_pbg005fb.png
+206,cc-edited-images\bg\cc_pbg037a.png,cc_pbg037a.png
+207,cc-edited-images\bg\cc_ibgupmovie_013_d.png,cc_ibgupmovie_013_d.png
+208,cc-edited-images\bg\cc_pbg005da.png,cc_pbg005da.png
+209,cc-edited-images\bg\cc_eff019c.png,cc_eff019c.png
+210,cc-edited-images\bg\cc_eff019b.png,cc_eff019b.png
+211,cc-edited-images\bg\cc_ibgupmovie_012_a.png,cc_ibgupmovie_012_a.png
+212,cc-edited-images\bg\cc_ibgupmovie_002_a.png,cc_ibgupmovie_002_a.png
+213,cc-edited-images\bg\cc_ibg007a.png,cc_ibg007a.png
+214,cc-edited-images\bg\cc_pbg005ba.png,cc_pbg005ba.png
+215,cc-edited-images\bg\cc_ibg098a.png,cc_ibg098a.png
+216,cc-edited-images\bg\cc_pbg039d.png,cc_pbg039d.png
+217,cc-edited-images\bg\cc_pbg030b.png,cc_pbg030b.png
+218,cc-edited-images\bg\cc_pbg030c.png,cc_pbg030c.png
+219,cc-edited-images\bg\cc_pbg046a.png,cc_pbg046a.png
+220,cc-edited-images\bg\bg0209na.png,bg0209na.png
+221,cc-edited-images\bg\cc_pbg020d.png,cc_pbg020d.png
+222,cc-edited-images\bg\bg0209na1.png,bg0209na1.png
+223,cc-edited-images\bg\cc_ibgupmovie_003_e.png,cc_ibgupmovie_003_e.png
+224,cc-edited-images\bg\cc_pbg038a.png,cc_pbg038a.png
+225,cc-edited-images\bg\cc_ibgupmovie_009_f.png,cc_ibgupmovie_009_f.png
+226,cc-edited-images\bg\cc_pbg005ea.png,cc_pbg005ea.png
+227,cc-edited-images\bg\cc_eff019h.dds,cc_eff019h.dds
+228,cc-edited-images\bg\cc_ibgupmovie_004_b.png,cc_ibgupmovie_004_b.png
+229,cc-edited-images\bg\cc_ibgupmovie_013_c.png,cc_ibgupmovie_013_c.png
+230,cc-edited-images\bg\cc_ibgupmovie_005_b.png,cc_ibgupmovie_005_b.png
+###231,cc-edited-images\bg\bg0402aa.png,bg0402aa.png
+232,cc-edited-images\bg\cc_pbg002a.png,cc_pbg002a.png
+233,cc-edited-images\bg\cc_pbg003a.png,cc_pbg003a.png
+234,cc-edited-images\bg\cc_ibgupmovie_009_e.png,cc_ibgupmovie_009_e.png
+235,cc-edited-images\bg\cc_ibgupmovie_003_a.png,cc_ibgupmovie_003_a.png
+236,cc-edited-images\bg\cc_pbg005fa.png,cc_pbg005fa.png
+237,cc-edited-images\bg\cc_pbg005aa.png,cc_pbg005aa.png
+238,cc-edited-images\bg\cc_pbg032b.png,cc_pbg032b.png
+# missed movmenu
+239,cc-edited-images\system\movmenu.dds,movmenu.dds
+# voiced lines without ingame text (#27)
+# nevermind, we're using videos for this now
+###240,cc-edited-images\bg\CC_POSTCREDITS_001_A.png,CC_POSTCREDITS_001_A.png
+###241,cc-edited-images\bg\CC_POSTCREDITS_001_B.png,CC_POSTCREDITS_001_B.png
+###242,cc-edited-images\bg\CC_POSTCREDITS_002.png,CC_POSTCREDITS_002.png
+# hana screeching (#51)
+243,cc-edited-images\bg\CC_HANA_001.png,CC_HANA_001.png
+244,cc-edited-images\bg\CC_HANA_002.png,CC_HANA_002.png
+245,cc-edited-images\bg\CC_HANA_003.png,CC_HANA_003.png
+246,cc-edited-images\bg\CC_HANA_004.png,CC_HANA_004.png
+247,cc-edited-images\bg\CC_HANA_005.png,CC_HANA_005.png
+248,cc-edited-images\bg\CC_HANA_006.png,CC_HANA_006.png
+249,cc-edited-images\bg\CC_HANA_007.png,CC_HANA_007.png
+250,cc-edited-images\bg\CC_HANA_008_A.png,CC_HANA_008_A.png
+251,cc-edited-images\bg\CC_HANA_008_B.png,CC_HANA_008_B.png
+252,cc-edited-images\bg\CC_HANA_009_A.png,CC_HANA_009_A.png
+253,cc-edited-images\bg\CC_HANA_009_B.png,CC_HANA_009_B.png
+# translated CGs, RC1 batch
+254,cc-edited-images\bg\bg0426aa.png,bg0426aa.png
+255,cc-edited-images\bg\cc_pbg038a-2.png,cc_pbg038a-2.png
+256,cc-edited-images\bg\cc_ibg042a.png,cc_ibg042a.png
+257,cc-edited-images\bg\cc_ibg123a-2.png,cc_ibg123a-2.png
+258,cc-edited-images\bg\cc_ibg109a-2.png,cc_ibg109a-2.png
+259,cc-edited-images\bg\cc_ibg139b-2.png,cc_ibg139b-2.png
+260,cc-edited-images\bg\bg0208ea2.png,bg0208ea2.png
+261,cc-edited-images\bg\cc_ibg206b.png,cc_ibg206b.png
+262,cc-edited-images\bg\ev_zzz007b.png,ev_zzz007b.png
+263,cc-edited-images\bg\bg0509na.png,bg0509na.png
+264,cc-edited-images\bg\bg0601aa.png,bg0601aa.png
+265,cc-edited-images\bg\cc_ibg130b.png,cc_ibg130b.png
+266,cc-edited-images\bg\cc_pbg005db-2.png,cc_pbg005db-2.png
+267,cc-edited-images\bg\bg0208ac2.png,bg0208ac2.png
+268,cc-edited-images\bg\bg0208aa1.png,bg0208aa1.png
+269,cc-edited-images\bg\cc_ibg130d-2.png,cc_ibg130d-2.png
+270,cc-edited-images\bg\bg0601na.png,bg0601na.png
+271,cc-edited-images\bg\cc_pbg003a-2.png,cc_pbg003a-2.png
+272,cc-edited-images\bg\cc_ibg047a-2.png,cc_ibg047a-2.png
+273,cc-edited-images\bg\bg0502na.png,bg0502na.png
+274,cc-edited-images\bg\bg0504na2.png,bg0504na2.png
+275,cc-edited-images\bg\cc_pbg037ab-2.png,cc_pbg037ab-2.png
+276,cc-edited-images\bg\bg0502aa.png,bg0502aa.png
+277,cc-edited-images\bg\cc_pbg048a.png,cc_pbg048a.png
+278,cc-edited-images\bg\cc_ibg130d.png,cc_ibg130d.png
+279,cc-edited-images\bg\bg0601ar.png,bg0601ar.png
+280,cc-edited-images\bg\cc_pbg008aa-2.png,cc_pbg008aa-2.png
+281,cc-edited-images\bg\cc_pbg031a-2.png,cc_pbg031a-2.png
+282,cc-edited-images\bg\cc_ibg087a.png,cc_ibg087a.png
+283,cc-edited-images\bg\cc_pbg008ab-2.png,cc_pbg008ab-2.png
+284,cc-edited-images\bg\cc_ibg079a.png,cc_ibg079a.png
+285,cc-edited-images\bg\ev_zzz007b-2.png,ev_zzz007b-2.png
+286,cc-edited-images\bg\bg0504na1.png,bg0504na1.png
+287,cc-edited-images\bg\bg0208aa2.png,bg0208aa2.png
+288,cc-edited-images\bg\bg0509na1.png,bg0509na1.png
+289,cc-edited-images\bg\cc_ibg130b-2.png,cc_ibg130b-2.png
+290,cc-edited-images\bg\cc_pbg047a.png,cc_pbg047a.png
+291,cc-edited-images\bg\cc_ibg206a.png,cc_ibg206a.png
+292,cc-edited-images\bg\ev_zzz007a.png,ev_zzz007a.png
+293,cc-edited-images\bg\bg0601ea.png,bg0601ea.png
+294,cc-edited-images\bg\cc_ibg100a-2.png,cc_ibg100a-2.png
+295,cc-edited-images\bg\cc_pbg039b-2.png,cc_pbg039b-2.png
+296,cc-edited-images\bg\bg0604ea.png,bg0604ea.png
+297,cc-edited-images\bg\cc_pbg020a-2.png,cc_pbg020a-2.png
+298,cc-edited-images\bg\cc_pbg043a.png,cc_pbg043a.png
+299,cc-edited-images\bg\cc_ibg082a.png,cc_ibg082a.png
+300,cc-edited-images\bg\cc_pbg002b-2.png,cc_pbg002b-2.png
+301,cc-edited-images\bg\bg0504na.png,bg0504na.png
+302,cc-edited-images\bg\cc_pbg031b-2.png,cc_pbg031b-2.png
+303,cc-edited-images\bg\cc_ibg054a-2.png,cc_ibg054a-2.png
+304,cc-edited-images\bg\cc_ibg130f-2.png,cc_ibg130f-2.png
+305,cc-edited-images\bg\cc_ibg130e.png,cc_ibg130e.png
+306,cc-edited-images\bg\cc_ibg109a.png,cc_ibg109a.png
+307,cc-edited-images\bg\cc_ibg047a.png,cc_ibg047a.png
+308,cc-edited-images\bg\cc_pbg049a-2.png,cc_pbg049a-2.png
+309,cc-edited-images\bg\bg0208aa5.png,bg0208aa5.png
+310,cc-edited-images\bg\bg0604na.png,bg0604na.png
+311,cc-edited-images\bg\ev_zzz007a-2.png,ev_zzz007a-2.png
+312,cc-edited-images\bg\cc_ibg130e-2.png,cc_ibg130e-2.png
+313,cc-edited-images\bg\bg0208na.png,bg0208na.png
+314,cc-edited-images\bg\ev_zzz012d.png,ev_zzz012d.png
+315,cc-edited-images\bg\cc_ibg130a-2.png,cc_ibg130a-2.png
+316,cc-edited-images\bg\bg0208aa6.png,bg0208aa6.png
+317,cc-edited-images\bg\bg0208na3.png,bg0208na3.png
+318,cc-edited-images\bg\cc_ibg108a.png,cc_ibg108a.png
+319,cc-edited-images\bg\cc_pbg002a-2.png,cc_pbg002a-2.png
+320,cc-edited-images\bg\cc_ibg130c-2.png,cc_ibg130c-2.png
+321,cc-edited-images\bg\cc_pbg043b.png,cc_pbg043b.png
+322,cc-edited-images\bg\cc_pbg005eb-2.png,cc_pbg005eb-2.png
+323,cc-edited-images\bg\cc_pbg050aa.png,cc_pbg050aa.png
+324,cc-edited-images\bg\cc_ibg130f.png,cc_ibg130f.png
+325,cc-edited-images\bg\cc_pbg005ab-2.png,cc_pbg005ab-2.png
+326,cc-edited-images\bg\cc_pbg037a-2.png,cc_pbg037a-2.png
+327,cc-edited-images\bg\cc_ibg108a-2.png,cc_ibg108a-2.png
+328,cc-edited-images\bg\bg0208ac1.png,bg0208ac1.png
+329,cc-edited-images\bg\cc_ibg130a.png,cc_ibg130a.png
+330,cc-edited-images\bg\bg0208ea1.png,bg0208ea1.png
+331,cc-edited-images\bg\bg0208aa4.png,bg0208aa4.png
+332,cc-edited-images\bg\cc_ibg060a-2.png,cc_ibg060a-2.png
+333,cc-edited-images\bg\cc_pbg003b-2.png,cc_pbg003b-2.png
+334,cc-edited-images\bg\cc_ibg130c.png,cc_ibg130c.png
+335,cc-edited-images\bg\cc_ibg123a.png,cc_ibg123a.png
+336,cc-edited-images\bg\cc_ibg100a.png,cc_ibg100a.png
+337,cc-edited-images\bg\bg0604aa.png,bg0604aa.png
+338,cc-edited-images\bg\bg0201na2.png,bg0201na2.png
+339,cc-edited-images\bg\cc_pbg016a-2.png,cc_pbg016a-2.png
+340,cc-edited-images\bg\bg0208na1.png,bg0208na1.png
+# system consistency, RC1
+341,cc-edited-images\system\config-2.dds,config-2.dds
+342,cc-edited-images\system\mapparts-2.dds,mapparts-2.dds
+343,cc-edited-images\system\nameplate-2.dds,nameplate-2.dds
+# missed CC_PBG040A through C, RC1
+344,cc-edited-images\bg\cc_pbg040c.png,cc_pbg040c.png
+345,cc-edited-images\bg\cc_pbg040b.png,cc_pbg040b.png
+346,cc-edited-images\bg\cc_pbg040a.png,cc_pbg040a.png
+# postcredits audio,RC3
+##347,c0data\postcredits_001_a.ogg,postcredits_001_a.ogg
+##348,c0data\postcredits_001_b.ogg,postcredits_001_b.ogg
+##349,c0data\postcredits_002_a.ogg,postcredits_002_a.ogg
+##350,c0data\postcredits_002_b.ogg,postcredits_002_b.ogg
+# CC_IBG010a marked as finished, RC3
+351,cc-edited-images\bg\cc_ibg010a.png,cc_ibg010a.png
+# HQ audio for some regular videos (#54), RC4
+##352,c0data\cc_mov001a.ogg,cc_mov001a.ogg
+##353,c0data\cc_int000.ogg,cc_int000.ogg
+##354,c0data\cc_ttl000a.ogg,cc_ttl000a.ogg
+# album.dds, gold
+355,cc-edited-images\system\album.dds,album.dds
+# last round of CGs for gold
+356,cc-edited-images\bg\cc_ibg001a.png,cc_ibg001a.png
+357,cc-edited-images\bg\cc_ibg008a.png,cc_ibg008a.png
+# 1.1, consistency
+358,cc-edited-images\bg\cc_pbg039d-2.png,cc_pbg039d-2.png
+# 1.1, hospital
+359,cc-edited-images\bg\bg0501aa.png,bg0501aa.png
+360,cc-edited-images\bg\bg0501na.png,bg0501na.png
+361,cc-edited-images\bg\bg0501na1.png,bg0501na1.png
+362,cc-edited-images\bg\bg0501na2.png,bg0501na2.png
+363,cc-edited-images\bg\cc_ibg118a.png,cc_ibg118a.png
+# 1.1, tips tutorial
+364,cc-edited-images\bg\tutorial.png,tutorial.png

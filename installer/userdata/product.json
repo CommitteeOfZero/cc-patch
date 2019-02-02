@@ -1,0 +1,52 @@
+{
+    "windowTitle": "Chaos;Child Steam Patch Installer",
+    "uninstallerWindowTitle": "Chaos;Child Steam Patch Uninstaller",
+    "gameTitle": "Chaos;Child",
+    "inputScriptVersionTitle": "English Steam",
+    "paths": {
+        "GAME_STEAM_NAME": "CHAOS;CHILD",
+        "PATCH_CONTENT": "DIST",
+        "SCRIPT_DIFFS": "merged_patches",
+        "SCRIPT_CONSISTENCY_DIFFS": "merged_patches_c",
+        "ENSCRIPT_MPK": "%GAME_PATH%/languagebarrier/enscript.mpk",
+        "ENSCRIPT_CONSISTENCY_MPK": "%GAME_PATH%/languagebarrier/enscript_c.mpk",
+        "LAUNCHERENG_PATH": "%GAME_PATH%/LauncherC0.exe",
+        "LANGUAGEBARRIER_LOG_PATH": "%GAME_PATH%/languagebarrier/log.txt",
+        "LAUNCHER_EXE": "LauncherC0.exe"
+    },
+    "platforms": {
+        "windows": {
+            "conflictingProcesses": [
+                "Game.exe",
+                "noidget.exe",
+                "launcher.exe",
+                "LauncherC0.exe",
+                "CCPatch-Installer.exe"
+            ],
+            "uninstallProductKey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ChaosChildSteamPatch",
+            "uninstallProductDisplayName": "Chaos;Child Steam Patch",
+            "uninstallProductDisplayVersion": "1.1",
+            "uninstallProductVersionMajor": 1,
+            "uninstallProductVersionMinor": 1,
+            "uninstallProductUninstallString": "\"%GAME_PATH%/nguninstall.exe\"",
+            "paths": {
+                "COZ_CONFIG_LOCATION": "%LOCALAPPDATA%/Committee of Zero",
+                "CONFIG_LOCATION": "%COZ_CONFIG_LOCATION%/CCSteam",
+                "MAGES_CONFIG_LOCATION": "%MYDOCUMENTS%/My Games/mages_steam",
+                "GAME_CONFIG_LOCATION": "%MAGES_CONFIG_LOCATION%/CHAOS CHILD/eng",
+                "DESKTOP_SHORTCUT_PATH": "%DESKTOP%/Chaos;Child (Steam Patch).lnk",
+                "STARTMENU_SHORTCUT_PATH": "%STARTMENU%/Chaos;Child (Steam Patch).lnk"
+            }
+        }
+    },
+    "playShortcut": {
+        "displayName": "Chaos;Child (Steam Patch)",
+        "version": "1.1",
+        "targetPath": "%LAUNCHERENG_PATH%",
+        "workingDir": "%GAME_PATH%",
+        "tooltip": "Play Chaos;Child (Steam Patch)",
+        "xdgCategories": "Game"
+    },
+    "origScriptArchivePath": "%GAME_PATH%/USRDIR/script.mpk",
+    "origScriptArchiveHash": "03f35afbe829872e9bea9a17064f149d"
+}

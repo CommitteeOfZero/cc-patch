@@ -1,0 +1,30 @@
+config.ps1
+temp/
+DIST/
+cc-edited-images/*
+!cc-edited-images/.gitkeep
+script_archive_v101/*
+!script_archive_v101/.gitkeep
+script_archive_steam/*
+!script_archive_steam/.gitkeep
+/*.zip
+/*.rar
+
+# noidget
+installer/build/*
+!installer/build/.gitkeep
+installer/deploy/
+installer/deployUninstaller/
+installer/userdata/enscriptToc.json
+installer/userdata/enscriptTocC.json
+
+# realboot
+launcher/build/*
+!launcher/build/.gitkeep
+launcher/deploy/
+
+# public only - empty cc-scripts directories
+cc-scripts/*
+!cc-scripts/.gitkeep
+cc-scripts-consistency/*
+!cc-scripts-consistency/.gitkeep
