@@ -1,0 +1,18 @@
+[submodule "mgsfontgen-dx"]
+	path = mgsfontgen-dx
+	url = https://github.com/CommitteeOfZero/mgsfontgen-dx.git
+	branch = master
+[submodule "SciAdv.Net"]
+	path = SciAdv.Net
+	url = https://github.com/CommitteeOfZero/SciAdv.Net.git
+	branch = transition
+[submodule "installer/noidget"]
+	path = installer/noidget
+	url = https://github.com/CommitteeOfZero/noidget.git
+[submodule "cc-script-patches"]
+	path = cc-script-patches
+	url = https://github.com/CommitteeOfZero/cc-script-patches.git
+    branch = steam
+[submodule "launcher/realboot"]
+	path = launcher/realboot
+	url = https://github.com/CommitteeOfZero/realboot.git
