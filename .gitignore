@@ -1,6 +1,7 @@
 config.ps1
 temp/
 DIST/
+symbols/
 cc-edited-images/*
 !cc-edited-images/.gitkeep
 script_archive_v101/*

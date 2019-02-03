@@ -1,8 +1,8 @@
 {
   "__schema_version": 2,
   "appdatadir": "Committee of Zero\\CCSteam",
-  "patchName": "[CoZ] CHAOS;CHILD Steam Patch (1.1)",
-  "patchVersion": "1.1",
+  "patchName": "[CoZ] CHAOS;CHILD Steam Patch (1.11)",
+  "patchVersion": "1.11",
   "base": {
     "hookText": true,
     "improveDialogueOutlines": false,

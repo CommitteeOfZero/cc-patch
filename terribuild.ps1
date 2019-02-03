@@ -9,7 +9,7 @@ try {
 }
 
 # EXE metadata configuration
-$version_string = "1.1"
+$version_string = "1.11"
 $tool_icon = "CoZIcon.ico"
 $game_icon = "LauncherIcon.ico"
 $publisher = "Committee of Zero"
@@ -121,12 +121,15 @@ Remove-Item -Force -Recurse -ErrorAction SilentlyContinue .\DIST
 New-Item -ItemType directory -Path .\DIST | Out-Null
 Remove-Item -Force -Recurse -ErrorAction SilentlyContinue .\temp
 New-Item -ItemType directory -Path .\temp | Out-Null
+Remove-Item -Force -Recurse -ErrorAction SilentlyContinue .\symbols
+New-Item -ItemType directory -Path .\symbols | Out-Null
 
 PrintSection "Building LanguageBarrier as $languagebarrier_configuration"
 & "$msbuild" "$languagebarrier_dir\LanguageBarrier\LanguageBarrier.vcxproj" "/p:Configuration=$languagebarrier_configuration"
 
 PrintSection "Copying LanguageBarrier to DIST"
 Copy-Item $languagebarrier_dir\languagebarrier\$languagebarrier_configuration\*.dll .\DIST
+Copy-Item $languagebarrier_dir\languagebarrier\$languagebarrier_configuration\*.pdb .\symbols
 Copy-Item -Recurse $languagebarrier_dir\languagebarrier\$languagebarrier_configuration\languagebarrier .\DIST
 New-Item -ItemType directory -Path .\DIST\CHILD | Out-Null
 # TODO how does wine handle this?
@@ -200,6 +203,7 @@ cd launcher
 cd ..
 SetRealbootExeMetadata .\launcher\deploy\LauncherC0.exe
 Copy-Item -Recurse -Force .\launcher\deploy\* .\DIST
+Copy-Item -Recurse -Force .\launcher\build\release\*.pdb .\symbols
 
 PrintSection "Building noidget"
 cd installer
@@ -207,6 +211,7 @@ cd installer
 cd ..
 SetInstallerExeMetadata .\installer\deploy\noidget.exe
 SetUninstallerExeMetadata .\installer\deployUninstaller\noidget.exe
+Copy-Item -Recurse -Force .\installer\build\release\*.pdb .\symbols
 
 PrintSection "Packing uninstaller"
 cd installer\deployUninstaller
@@ -244,7 +249,7 @@ Move-Item -Force ..\merged_patches_c .
 Move-Item -Force ..\..\installer\deploy\* .
 Move-Item -Force .\noidget.exe .\CCPatch-Installer.exe
 cd ..\..\DIST
-Compress-Archive -Path "..\temp\$patchFolderName" -DestinationPath "$patchFolderName.zip" -CompressionLevel Optimal
+7z a -mx=5 "$patchFolderName.zip" "..\temp\$patchFolderName"
 cd ..
 
 PrintSection "Removing temp"

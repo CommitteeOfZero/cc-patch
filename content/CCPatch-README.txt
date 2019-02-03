@@ -1,6 +1,6 @@
 CHAOS;CHILD Steam Patch
 Committee of Zero
-Version 1.1 - February 2, 2019
+Version 1.11 - February 3, 2019
 ==============================
 http://sonome.dareno.me
 https://twitter.com/CommitteeOf0
@@ -11,6 +11,12 @@ https://github.com/CommitteeOfZero
 See http://sonome.dareno.me/projects/chaoschild-steam.html for details, contact information and further instructions.
 
 For troubleshooting, please come to our Discord. You can always find the latest version of the patch at https://github.com/CommitteeOfZero/cc-patch/releases
+
+==============================
+Changes from 1.1:
+==============================
+
+* Fixed an issue where the installer would crash on pre-AVX CPUs.
 
 ==============================
 Changes from 1.0:
