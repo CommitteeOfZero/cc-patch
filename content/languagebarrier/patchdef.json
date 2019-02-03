@@ -24,6 +24,7 @@
     "customInstGetDicEnabled": true,
     "customInstGetDicGroup": "user1",
     "customInstGetDicOp": 38,
+    "blockingKeyWaitTimer": true,
     "hijackLauncher": "LauncherC0.exe",
     "fmv": {
       "fonts": [
