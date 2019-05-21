@@ -1,7 +1,10 @@
 {
-  "__schema_version": 3,
+  "__schema_version": 4,
+  "showAllSettings": false,
+  "controllerEnabled": true,
   "improveDialogueOutlines": true,
   "hqFmvAudio": true,
   "consistency": true,
-  "karaokeSubs": "all"
+  "karaokeSubs": "all",
+  "selectedController": ""
 }

@@ -9,7 +9,7 @@ try {
 }
 
 # EXE metadata configuration
-$version_string = "1.11"
+$version_string = "1.12"
 $tool_icon = "CoZIcon.ico"
 $game_icon = "LauncherIcon.ico"
 $publisher = "Committee of Zero"
@@ -134,6 +134,9 @@ Copy-Item -Recurse $languagebarrier_dir\languagebarrier\$languagebarrier_configu
 New-Item -ItemType directory -Path .\DIST\CHILD | Out-Null
 # TODO how does wine handle this?
 Move-Item .\DIST\dinput8.dll .\DIST\CHILD\
+# Reported necessary for some users, otherwise:
+# "Procedure entry point csri_renderer_default could not be located in ...\CHILD\DINPUT8.dll"
+Copy-Item .\DIST\VSFilter.dll .\DIST\CHILD\
 
 PrintSection "Building and running mgsfontgen-dx"
 $mgsfontgen_dx_repo = ".\mgsfontgen-dx"

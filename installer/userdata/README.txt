@@ -1,6 +1,6 @@
 CHAOS;CHILD Steam Patch
 Committee of Zero
-Version 1.11 - February 3, 2019
+Version 1.12 - May 21, 2019
 ==============================
 http://sonome.dareno.me
 https://twitter.com/CommitteeOf0
@@ -11,6 +11,19 @@ https://github.com/CommitteeOfZero
 See http://sonome.dareno.me/projects/chaoschild-steam.html for details, contact information and further instructions.
 
 For troubleshooting, please come to our Discord. You can always find the latest version of the patch at https://github.com/CommitteeOfZero/cc-patch/releases
+
+==============================
+Changes from 1.11:
+==============================
+
+* Fixed compatibility with May 20, 2019 Steam update.
+* Adjusted edited keyboard help for Steam version.
+* Fixed launcher issue with moving save files from a system with a controller installed to a system without one ("There is an error importing setup files").
+* Controller input can now be disabled to work around phantom inputs.
+* Replaced update checker technology as the old one was causing launcher crashes for a small number of users.
+* Fixed launcher not starting with "Entry Point Not Found" error for a small number of users.
+* Fixed replaced videos failing to play for some Linux users.
+* More typo fixes etc.
 
 ==============================
 Changes from 1.1:

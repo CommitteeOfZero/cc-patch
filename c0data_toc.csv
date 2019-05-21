@@ -2,7 +2,7 @@
 # font replacement
 0,temp\FONT_A.dds,FONT_A.dds
 # manual.mpk
-1,cc-edited-images\manual\help00.dds,help00.dds
+1,cc-edited-images\manual\help00_steam.dds,help00_steam.dds
 2,cc-edited-images\manual\help01.dds,help01.dds
 # translated system textures
 3,cc-edited-images\system\backlog.dds,backlog.dds

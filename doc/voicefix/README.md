@@ -24,7 +24,7 @@ became English `voice.mpk`:
 | **4**           | **Voice line 3, second half** |
 | **5**           | **Voice line 4**              |
 
-While the Steam version ships the modified audio data, they forgot to port over the modified lipsync data. Also, the Steam version's native code expects big-endian lipsync data (like some console builds and unlike the Japanese PC version).
+While the Steam version ships the modified audio data, they forgot to port over the modified lipsync data. Also, the original Steam version's native code expects big-endian lipsync data (like some console builds and unlike the Japanese PC version or later updates).
 
 ### Missing/mismatched audio
 

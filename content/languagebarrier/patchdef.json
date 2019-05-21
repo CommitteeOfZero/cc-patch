@@ -1,8 +1,8 @@
 {
   "__schema_version": 2,
   "appdatadir": "Committee of Zero\\CCSteam",
-  "patchName": "[CoZ] CHAOS;CHILD Steam Patch (1.11)",
-  "patchVersion": "1.11",
+  "patchName": "[CoZ] CHAOS;CHILD Steam Patch (1.12)",
+  "patchVersion": "1.12",
   "base": {
     "hookText": true,
     "improveDialogueOutlines": false,
@@ -39,7 +39,9 @@
       },
       "videoRedirection": {
         "diseff_001a.bk2": "DISEFF_001A.bik",
+        "diseff_001a_en.bk2": "DISEFF_001A.bik",
         "cc_mov005a.bk2": "cc_mov005a.bik",
+        "cc_mov005a_en.bk2": "cc_mov005a.bik",
         "cc_ttl001a.bk2": "cc_ttl001a.bik",
         "cc_ttl002a.bk2": "cc_ttl002a.bik",
         "cc_ttl003a.bk2": "cc_ttl003a.bik",
@@ -480,7 +482,8 @@
         },
         "fmv": {
           "videoRedirection": {
-            "cc_mov005a.bk2": "cc_mov005a-2.bik"
+            "cc_mov005a.bk2": "cc_mov005a-2.bik",
+            "cc_mov005a_en.bk2": "cc_mov005a-2.bik"
           }
         }
       }
