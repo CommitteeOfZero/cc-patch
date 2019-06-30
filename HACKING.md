@@ -1,5 +1,7 @@
 # Building C;C Patch
 
+[![Accurate representation of C;C patch build process](http://img.youtube.com/vi/FR5WT12B_88/0.jpg)](http://www.youtube.com/watch?v=FR5WT12B_88 "Accurate representation of C;C patch build process")
+
 **THIS PAGE IS ONLY OF INTEREST TO NERDS** and people who'd like to make their own patches for Chaos;Child (or some other SciADV titles) - and even then, you'll need a nerd to deal with this.
 
 This is a snapshot of our root project for the C;C patch, with some assets removed.
