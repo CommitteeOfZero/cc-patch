@@ -1,4 +1,4 @@
-CHAOS;CHILD Improvement Patch (Switch)
+CHAOS;CHILD Improvement Patch (GOG)
 Committee of Zero
 Version 2.2.0 - November 25, 2025
 ==============================
