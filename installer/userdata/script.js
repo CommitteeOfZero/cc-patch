@@ -6,8 +6,6 @@ var product =
 
 var enscriptToc =
     JSON.parse(ng.fs.global().readTextFile(':/userdata/enscriptToc.json'));
-var enscriptTocC =
-    JSON.parse(ng.fs.global().readTextFile(':/userdata/enscriptTocC.json'));
 
 var state = {};
 state.discovery = {
@@ -173,6 +171,9 @@ function DoTx() {
           'dinput8', 'native,builtin');
     }
   }
+// We're replacing Steam Grid assets for them to be spoiler-free and cool
+  var steamGridSection = ng.tx.tx().addSection('Replacing Steam Grid assets');
+  steamGridSection.copyFiles('%STEAMGRID_CONTENT%/*', '%STEAM_PATH%/userdata/%STEAM_ACTIVE_USER%/config/grid')
 
   var patchContentSection = ng.tx.tx().addSection('Copying patch content');
   patchContentSection.copyFiles('%PATCH_CONTENT%/*', '%GAME_PATH%');
@@ -205,13 +206,8 @@ function DoTx() {
     });
   }
 
-      applyPatchesSection.log('Building patched script archive...');
+  applyPatchesSection.log('Building patched script archive...');
   buildScriptMpk('%ENSCRIPT_MPK%', enscriptToc, '%SCRIPT_DIFFS%');
-
-  applyPatchesSection.log(
-      'Building patched script archive (#consistency version)...');
-  buildScriptMpk(
-      '%ENSCRIPT_CONSISTENCY_MPK%', enscriptTocC, '%SCRIPT_CONSISTENCY_DIFFS%');
 
   if (state.shouldCreateDesktopShortcut ||
       state.shouldCreateStartMenuShortcut) {
@@ -389,6 +385,15 @@ switch (ng.systemInfo.platform()) {
           ng.win32.registry().value(
               ng.win32.RootKey.HKCU, 'Software\\Valve\\Steam', true,
               'SteamPath'));
+    }
+    if (ng.win32.registry().valueExists(
+            ng.win32.RootKey.HKCU, 'Software\\Valve\\Steam\\ActiveProcess', true,
+            'ActiveUser')) {
+      ng.fs.global().setMacro(
+          'STEAM_ACTIVE_USER',
+          ng.win32.registry().value(
+              ng.win32.RootKey.HKCU, 'Software\\Valve\\Steam\\ActiveProcess', true,
+              'ActiveUser'));
     }
     break;
 }
