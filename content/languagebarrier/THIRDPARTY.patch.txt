@@ -1,4 +1,4 @@
-CHAOS;CHILD Steam Patch depends on a number of third-party components:
+CHAOS;CHILD Improvement Patch (Steam) depends on a number of third-party components:
 
 Installer background music: "WORLD -PSG version- from CHAOS;CHILD" by Takeshi Abo <https://soundcloud.com/valsound/world-psg-version-from-chaoschild>
 Ingame text font: Noto Sans CJK JP by Google <https://www.google.com/get/noto/>
