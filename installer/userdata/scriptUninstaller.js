@@ -73,11 +73,22 @@ function DoTx() {
     section.removeDirectory('%COZ_CONFIG_LOCATION%', true);
   }
 
-  section.removeFile('%STEAM_PATH%/userdata/%STEAM_ACTIVE_USER%/config/grid/%GAME_STEAM_ID%_hero.png')
+  /*section.removeFile('%STEAM_PATH%/userdata/%STEAM_ACTIVE_USER%/config/grid/%GAME_STEAM_ID%_hero.png')
   section.removeFile('%STEAM_PATH%/userdata/%STEAM_ACTIVE_USER%/config/grid/%GAME_STEAM_ID%_logo.png')
   section.removeFile('%STEAM_PATH%/userdata/%STEAM_ACTIVE_USER%/config/grid/%GAME_STEAM_ID%.png')
-  section.removeFile('%STEAM_PATH%/userdata/%STEAM_ACTIVE_USER%/config/grid/%GAME_STEAM_ID%p.png')
+  section.removeFile('%STEAM_PATH%/userdata/%STEAM_ACTIVE_USER%/config/grid/%GAME_STEAM_ID%p.png')*/
 
+  if (ng.fs.global().pathIsFile('%GAME_PATH%/launcher.exe')) {
+    section.removeFile('%GAME_PATH%/launcher.exe');
+    section.copyFiles('%GAME_PATH%/launcher_original.exe', '%GAME_PATH%/launcher.exe');
+  }
+
+  section.removeFile('%GAME_PATH%/d3d9.dll');
+  section.removeFile('%GAME_PATH%/d3d10.dll');
+  section.removeFile('%GAME_PATH%/d3d10_1.dll');
+  section.removeFile('%GAME_PATH%/d3d10core.dll');
+  section.removeFile('%GAME_PATH%/d3d11.dll');
+  section.removeFile('%GAME_PATH%/dxgi.dll');
   section.removeFile('%GAME_PATH%/CHILD/d3d9.dll');
   section.removeFile('%GAME_PATH%/CHILD/d3d10.dll');
   section.removeFile('%GAME_PATH%/CHILD/d3d10_1.dll');

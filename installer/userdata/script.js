@@ -44,7 +44,16 @@ function DiscoverExisting() {
 
   state.discovery.run = true;
 
-  switch (ng.systemInfo.platform()) {
+  if (ng.win32.registry().valueExists(
+    ng.win32.RootKey.HKLM, 'SOFTWARE\\WOW6432Node\\GOG.com\\Games\\2018454546', true, 'workingDir')){
+      state.discovery.gameFound = true;
+        state.discovery.patchFound = true;
+        state.discovery.gameLocation = ng.win32.registry().value(
+          ng.win32.RootKey.HKLM, 'SOFTWARE\\WOW6432Node\\GOG.com\\Games\\2018454546', true,
+          'workingDir');
+    }
+
+  /*switch (ng.systemInfo.platform()) {
     case ng.systemInfo.OsFamily.Windows:
       if (ng.win32.registry().valueExists(
               ng.win32.RootKey.HKLM,
@@ -110,7 +119,7 @@ function DiscoverExisting() {
         }
       }
       break;
-  }
+  }*/
 }
 
 function DoTx() {
@@ -169,8 +178,16 @@ function DoTx() {
     }
   }
 // We're replacing Steam Grid assets for them to be spoiler-free and cool
-  var steamGridSection = ng.tx.tx().addSection('Replacing Steam Grid assets');
-  steamGridSection.copyFiles('%STEAMGRID_CONTENT%/*', '%STEAM_PATH%/userdata/%STEAM_ACTIVE_USER%/config/grid')
+  /*var steamGridSection = ng.tx.tx().addSection('Replacing Steam Grid assets');
+  steamGridSection.copyFiles('%STEAMGRID_CONTENT%/*', '%STEAM_PATH%/userdata/%STEAM_ACTIVE_USER%/config/grid')*/
+
+  var applyPatchesSection = ng.tx.tx().addSection('Applying patches');
+
+  applyPatchesSection.log('Renaming launcher executable...');
+
+  if (!ng.fs.global().pathIsFile('%GAME_PATH%/launcher_original.exe')) {
+    applyPatchesSection.copyFiles('%GAME_PATH%/launcher.exe', '%GAME_PATH%/launcher_original.exe');
+  }
 
   var patchContentSection = ng.tx.tx().addSection('Copying patch content');
   patchContentSection.copyFiles('%PATCH_CONTENT%/*', '%GAME_PATH%');
@@ -343,7 +360,7 @@ switch (ng.systemInfo.platform()) {
             ng.win32.RootKey.HKCU,
             'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders',
             true, 'Personal'));
-    if (ng.win32.registry().valueExists(
+    /*if (ng.win32.registry().valueExists(
             ng.win32.RootKey.HKCU, 'Software\\Valve\\Steam', true,
             'SteamPath')) {
       ng.fs.global().setMacro(
@@ -360,6 +377,14 @@ switch (ng.systemInfo.platform()) {
           ng.win32.registry().value(
               ng.win32.RootKey.HKCU, 'Software\\Valve\\Steam\\ActiveProcess', true,
               'ActiveUser'));
+    }*/
+    if (ng.win32.registry().valueExists(
+      ng.win32.RootKey.HKLM, 'SOFTWARE\\WOW6432Node\\GOG.com\\Games\\2018454546', true, 'workingDir')){
+        ng.fs.global().setMacro(
+          'GAME_PATH',
+          ng.win32.registry().value(
+              ng.win32.RootKey.HKLM, 'SOFTWARE\\WOW6432Node\\GOG.com\\Games\\2018454546', true,
+              'workingDir'));
     }
     break;
 }

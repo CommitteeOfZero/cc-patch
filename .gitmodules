@@ -12,6 +12,7 @@
 [submodule "LanguageBarrier"]
 	path = LanguageBarrier
 	url = https://github.com/CommitteeOfZero/LanguageBarrier.git
+	branch = cryptbase
 [submodule "coalesc3"]
 	path = coalesc3
 	url = https://github.com/CommitteeOfZero/coalesc3
