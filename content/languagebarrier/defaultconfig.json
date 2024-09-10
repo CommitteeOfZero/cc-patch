@@ -4,7 +4,6 @@
   "controllerEnabled": true,
   "improveDialogueOutlines": true,
   "hqFmvAudio": true,
-  "consistency": true,
   "karaokeSubs": "all",
   "selectedController": ""
 }

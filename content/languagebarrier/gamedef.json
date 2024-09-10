@@ -1,6 +1,7 @@
 {
   "__schema_version": 2,
   "gameName": "CHAOS;CHILD",
+  "gameDxVersion": "dx9",
   "bgmClear": -1,
   "mpkIdScriptMpk": 3,
   "mpkIdBgmMpk": 7,
@@ -30,6 +31,7 @@
   "videoTableOrigCount": 88,
   "dialogueLayoutWidthLookupRetOffsets": "ccsteam",
   "ccBacklogNamePosAdjustVersion": "ccsteam",
+  "enableBinkAudioOffset": true,
   "compiler": "msvc2015",
   "signatures": {
     "bink2w32": {

@@ -1,8 +1,8 @@
 {
   "__schema_version": 2,
-  "appdatadir": "Committee of Zero\\CCSteam",
-  "patchName": "[CoZ] CHAOS;CHILD Steam Patch (1.12)",
-  "patchVersion": "1.12",
+  "appdatadir": "Committee of Zero\\CCGOG",
+  "patchName": "CHAOS;CHILD Improvement Patch (GOG) (2.2.0)",
+  "patchVersion": "2.2.0",
   "base": {
     "hookText": true,
     "improveDialogueOutlines": false,
@@ -25,7 +25,7 @@
     "customInstGetDicGroup": "user1",
     "customInstGetDicOp": 38,
     "blockingKeyWaitTimer": true,
-    "hijackLauncher": "LauncherC0.exe",
+    "hijackLauncher": "launcher.exe",
     "fmv": {
       "fonts": [
         "SoukouMincho.ttf",
@@ -42,6 +42,7 @@
         "diseff_001a_en.bk2": "DISEFF_001A.bik",
         "cc_mov005a.bk2": "cc_mov005a.bik",
         "cc_mov005a_en.bk2": "cc_mov005a.bik",
+        "cc_ttl000a.bk2": "cc_ttl000a.bik",
         "cc_ttl001a.bk2": "cc_ttl001a.bik",
         "cc_ttl002a.bk2": "cc_ttl002a.bik",
         "cc_ttl003a.bk2": "cc_ttl003a.bik",
@@ -57,7 +58,8 @@
         "cc_ttl013a.bk2": "cc_ttl013a.bik",
         "cc_ttl014a.bk2": "cc_ttl014a.bik",
         "cc_ttl015a.bk2": "cc_ttl015a.bik",
-        "cc_ttl016a.bk2": "cc_ttl016a.bik"
+        "cc_ttl016a.bk2": "cc_ttl016a.bik",
+        "cc_int000.bk2": "cc_int000.bik"
       },
       "additionalVideos": [
         "postcredits_001_a",
@@ -98,7 +100,8 @@
         "15": 105,
         "17": 106,
         "21": 239,
-        "0": 355
+        "0": 355,
+        "29": 365
       },
       "manual": {
         "0": 1,
@@ -310,7 +313,16 @@
         "212": 361,
         "213": 362,
         "433": 363,
-        "896": 364
+        "896": 364,
+        "39": 366,
+        "41": 367,
+        "42": 368,
+        "43": 369,
+        "659": 370,
+        "660": 371,
+        "661": 372,
+        "662": 373,
+        "663": 374
       }
     },
     "loopMetadata": {
@@ -426,64 +438,6 @@
               "movie_op.bk2": "movie_op_tlonly.ass",
               "movie_op2.bk2": "movie_op2_tlonly.ass"
             }
-          }
-        }
-      }
-    },
-    "consistency": {
-      "type": "bool",
-      "setters": {
-        "physicalFileRedirection": {
-          "script.mpk": "enscript_c.mpk"
-        },
-        "fileRedirection": {
-          "system": {
-            "4": 341,
-            "17": 342,
-            "23": 343
-          },
-          "bg": {
-            "635": 255,
-            "440": 257,
-            "428": 258,
-            "466": 259,
-            "587": 266,
-            "451": 269,
-            "574": 271,
-            "354": 272,
-            "633": 275,
-            "596": 280,
-            "626": 281,
-            "597": 283,
-            "820": 285,
-            "449": 289,
-            "419": 294,
-            "637": 295,
-            "611": 297,
-            "573": 300,
-            "627": 302,
-            "365": 303,
-            "453": 304,
-            "653": 308,
-            "819": 311,
-            "452": 312,
-            "448": 315,
-            "572": 319,
-            "450": 320,
-            "590": 322,
-            "578": 325,
-            "631": 326,
-            "427": 327,
-            "377": 332,
-            "575": 333,
-            "607": 339,
-            "639": 358
-          }
-        },
-        "fmv": {
-          "videoRedirection": {
-            "cc_mov005a.bk2": "cc_mov005a-2.bik",
-            "cc_mov005a_en.bk2": "cc_mov005a-2.bik"
           }
         }
       }

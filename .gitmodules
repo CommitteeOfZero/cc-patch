@@ -2,19 +2,19 @@
 	path = mgsfontgen-dx
 	url = https://github.com/CommitteeOfZero/mgsfontgen-dx.git
 	branch = master
-[submodule "SciAdv.Net"]
-	path = SciAdv.Net
-	url = https://github.com/CommitteeOfZero/SciAdv.Net.git
-	branch = transition
 [submodule "installer/noidget"]
 	path = installer/noidget
 	url = https://github.com/CommitteeOfZero/noidget.git
-	branch = master
-[submodule "cc-script-patches"]
-	path = cc-script-patches
-	url = https://github.com/CommitteeOfZero/cc-script-patches.git
-	branch = steam
+    branch = steam
 [submodule "launcher/realboot"]
 	path = launcher/realboot
 	url = https://github.com/CommitteeOfZero/realboot.git
-	branch = master
+[submodule "LanguageBarrier"]
+	path = LanguageBarrier
+	url = https://github.com/CommitteeOfZero/LanguageBarrier.git
+[submodule "coalesc3"]
+	path = coalesc3
+	url = https://github.com/CommitteeOfZero/coalesc3
+[submodule "RegionalDialect"]
+	path = RegionalDialect
+	url = https://github.com/CommitteeOfZero/RegionalDialect.git

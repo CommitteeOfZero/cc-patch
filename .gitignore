@@ -4,8 +4,8 @@ DIST/
 symbols/
 cc-edited-images/*
 !cc-edited-images/.gitkeep
-script_archive_v101/*
-!script_archive_v101/.gitkeep
+c0data_switch_eng/*
+!c0data_switch_eng/system/*.json
 script_archive_steam/*
 !script_archive_steam/.gitkeep
 /*.zip
@@ -24,8 +24,6 @@ launcher/build/*
 !launcher/build/.gitkeep
 launcher/deploy/
 
-# public only - empty cc-scripts directories
-cc-scripts/*
-!cc-scripts/.gitkeep
-cc-scripts-consistency/*
-!cc-scripts-consistency/.gitkeep
+content/languagebarrier/audio/*
+content/languagebarrier/videos/720p/*
+content/languagebarrier/videos/1080p/*
