@@ -72,6 +72,19 @@ function DoTx() {
     section.removeDirectory('%CONFIG_LOCATION%');
     section.removeDirectory('%COZ_CONFIG_LOCATION%', true);
   }
+
+  section.removeFile('%STEAM_PATH%/userdata/%STEAM_ACTIVE_USER%/config/grid/%GAME_STEAM_ID%_hero.png')
+  section.removeFile('%STEAM_PATH%/userdata/%STEAM_ACTIVE_USER%/config/grid/%GAME_STEAM_ID%_logo.png')
+  section.removeFile('%STEAM_PATH%/userdata/%STEAM_ACTIVE_USER%/config/grid/%GAME_STEAM_ID%.png')
+  section.removeFile('%STEAM_PATH%/userdata/%STEAM_ACTIVE_USER%/config/grid/%GAME_STEAM_ID%p.png')
+
+  section.removeFile('%GAME_PATH%/CHILD/d3d9.dll');
+  section.removeFile('%GAME_PATH%/CHILD/d3d10.dll');
+  section.removeFile('%GAME_PATH%/CHILD/d3d10_1.dll');
+  section.removeFile('%GAME_PATH%/CHILD/d3d10core.dll');
+  section.removeFile('%GAME_PATH%/CHILD/d3d11.dll');
+  section.removeFile('%GAME_PATH%/CHILD/dxgi.dll');
+
   section.rollbackReceipt();
 
   ng.tx.run();
