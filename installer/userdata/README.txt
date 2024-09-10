@@ -1,4 +1,4 @@
-CHAOS;CHILD Improvement Patch (Steam)
+CHAOS;CHILD Improvement Patch (GOG)
 Committee of Zero
 Version 2.1.0 - September 14th, 2024
 ==============================
