@@ -22,3 +22,4 @@
 [submodule "LanguageBarrier"]
 	path = LanguageBarrier
 	url = https://github.com/CommitteeOfZero/LanguageBarrier.git
+	branch = cryptbase
