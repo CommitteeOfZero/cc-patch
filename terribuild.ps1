@@ -14,7 +14,7 @@ $version_string = "2.2.0"
 $tool_icon = "CoZIcon.ico"
 $game_icon = "LauncherIcon.ico"
 $publisher = "Committee of Zero"
-$product_name = "CHAOS;CHILD Improvement Patch (Steam)"
+$product_name = "CHAOS;CHILD Improvement Patch (GOG)"
 
 # Code
 
@@ -135,7 +135,7 @@ Copy-Item $languagebarrier_dir\languagebarrier\$languagebarrier_configuration\*.
 Copy-Item -Recurse $languagebarrier_dir\languagebarrier\$languagebarrier_configuration\languagebarrier .\DIST
 New-Item -ItemType directory -Path .\DIST\CHILD | Out-Null
 # TODO how does wine handle this?
-Move-Item .\DIST\dinput8.dll .\DIST\CHILD\
+Copy-Item .\DIST\cryptbase.dll .\DIST\CHILD\
 # Reported necessary for some users, otherwise:
 # "Procedure entry point csri_renderer_default could not be located in ...\CHILD\DINPUT8.dll"
 Copy-Item .\DIST\VSFilter.dll .\DIST\CHILD\
@@ -166,19 +166,19 @@ echo $null > .\DIST\languagebarrier\stringReplacementTable.bin
 PrintSection "Copying content to DIST"
 Copy-Item -Recurse -Force .\content\* .\DIST
 # DXVK
-Move-Item .\DIST\d3d9 ".\DIST\CHILD"
-Move-Item .\DIST\d3d10 ".\DIST\CHILD"
-Move-Item .\DIST\d3d10_1 ".\DIST\CHILD"
-Move-Item .\DIST\d3d10core ".\DIST\CHILD"
-Move-Item .\DIST\d3d11 ".\DIST\CHILD"
-Move-Item .\DIST\dxgi ".\DIST\CHILD"
+Copy-Item .\DIST\d3d9 ".\DIST\CHILD"
+Copy-Item .\DIST\d3d10 ".\DIST\CHILD"
+Copy-Item .\DIST\d3d10_1 ".\DIST\CHILD"
+Copy-Item .\DIST\d3d10core ".\DIST\CHILD"
+Copy-Item .\DIST\d3d11 ".\DIST\CHILD"
+Copy-Item .\DIST\dxgi ".\DIST\CHILD"
 
 
 PrintSection "Building and copying realboot"
 cd launcher
 & .\realboot_build.bat
 cd ..
-SetRealbootExeMetadata .\launcher\deploy\LauncherC0.exe
+SetRealbootExeMetadata .\launcher\deploy\launcher.exe
 Copy-Item -Recurse -Force .\launcher\deploy\* .\DIST
 Copy-Item -Recurse -Force .\launcher\build\release\*.pdb .\symbols
 
@@ -216,15 +216,15 @@ cmd /c copy /b .\temp\InstallerExtractor.exe + .\temp\sfxbase.7z DIST\Installer.
 
 PrintSection "Packing installer"
 cd temp
-$patchFolderName = "CCSteamPatch-v$version_string-Setup"
+$patchFolderName = "CCGOGPatch-v$version_string-Setup"
 New-Item -ItemType directory -Path $patchFolderName | Out-Null
 cd $patchFolderName
 New-Item -ItemType directory -Path DIST | Out-Null
 Move-Item -Force ..\..\DIST\* .\DIST
-New-Item -ItemType directory -Path STEAMGRID | Out-Null
-Copy-Item -Recurse -Force  ..\..\content_steamgrid\* .\STEAMGRID
+<#New-Item -ItemType directory -Path STEAMGRID | Out-Null
+Copy-Item -Recurse -Force  ..\..\content_steamgrid\* .\STEAMGRID#>
 Move-Item -Force ..\..\installer\deploy\* .
-Move-Item -Force .\noidget.exe .\CCSteamPatch-Installer.exe
+Move-Item -Force .\noidget.exe .\CCGOGPatch-Installer.exe
 cd ..\..\DIST
 7z a -mx=5 "$patchFolderName.zip" "..\temp\$patchFolderName"
 cd ..

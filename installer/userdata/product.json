@@ -1,6 +1,6 @@
 {
-    "windowTitle": "CHAOS;CHILD Improvement Patch (Steam) Installer",
-    "uninstallerWindowTitle": "CHAOS;CHILD Improvement Patch (Steam) Uninstaller",
+    "windowTitle": "CHAOS;CHILD Improvement Patch (GOG) Installer",
+    "uninstallerWindowTitle": "CHAOS;CHILD Improvement Patch (GOG) Uninstaller",
     "gameTitle": "CHAOS;CHILD",
     "inputScriptVersionTitle": "English Steam",
     "paths": {
@@ -10,9 +10,9 @@
         "STEAMGRID_CONTENT": "STEAMGRID",
         "SCRIPT_DIFFS": "merged_patches",
         "ENSCRIPT_MPK": "%GAME_PATH%/languagebarrier/enscript.mpk",
-        "LAUNCHERENG_PATH": "%GAME_PATH%/LauncherC0.exe",
+        "LAUNCHERENG_PATH": "%GAME_PATH%/launcher.exe",
         "LANGUAGEBARRIER_LOG_PATH": "%GAME_PATH%/languagebarrier/log.txt",
-        "LAUNCHER_EXE": "LauncherC0.exe"
+        "LAUNCHER_EXE": "launcher.exe"
     },
     "platforms": {
         "windows": {
@@ -21,30 +21,30 @@
                 "noidget.exe",
                 "launcher.exe",
                 "LauncherC0.exe",
-                "CCPatch-Installer.exe"
+                "CCGOGPatch-Installer.exe"
             ],
-            "uninstallProductKey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ChaosChildSteamPatch",
-            "uninstallProductDisplayName": "CHAOS;CHILD Improvement Patch (Steam)",
+            "uninstallProductKey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ChaosChildGOGPatch",
+            "uninstallProductDisplayName": "CHAOS;CHILD Improvement Patch (GOG)",
             "uninstallProductDisplayVersion": "2.2.0",
             "uninstallProductVersionMajor": 2,
             "uninstallProductVersionMinor": 0,
             "uninstallProductUninstallString": "\"%GAME_PATH%/nguninstall.exe\"",
             "paths": {
                 "COZ_CONFIG_LOCATION": "%LOCALAPPDATA%/Committee of Zero",
-                "CONFIG_LOCATION": "%COZ_CONFIG_LOCATION%/CCSteam",
-                "MAGES_CONFIG_LOCATION": "%MYDOCUMENTS%/My Games/mages_steam",
+                "CONFIG_LOCATION": "%COZ_CONFIG_LOCATION%/CCGOG",
+                "MAGES_CONFIG_LOCATION": "%MYDOCUMENTS%/My Games/Mages Inc",
                 "GAME_CONFIG_LOCATION": "%MAGES_CONFIG_LOCATION%/CHAOS CHILD/eng",
-                "DESKTOP_SHORTCUT_PATH": "%DESKTOP%/CHAOS;CHILD (Steam Patch).lnk",
-                "STARTMENU_SHORTCUT_PATH": "%STARTMENU%/CHAOS;CHILD (Steam Patch).lnk"
+                "DESKTOP_SHORTCUT_PATH": "%DESKTOP%/CHAOS;CHILD (GOG Patch).lnk",
+                "STARTMENU_SHORTCUT_PATH": "%STARTMENU%/CHAOS;CHILD (GOG Patch).lnk"
             }
         }
     },
     "playShortcut": {
-        "displayName": "CHAOS;CHILD (Steam Patch)",
+        "displayName": "CHAOS;CHILD (GOG Patch)",
         "version": "2.2.0",
         "targetPath": "%LAUNCHERENG_PATH%",
         "workingDir": "%GAME_PATH%",
-        "tooltip": "Play CHAOS;CHILD (Steam Patch)",
+        "tooltip": "Play CHAOS;CHILD (GOG Patch)",
         "xdgCategories": "Game"
     },
     "origScriptArchivePath": "%GAME_PATH%/USRDIR/script.mpk",

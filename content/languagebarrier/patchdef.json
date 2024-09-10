@@ -1,7 +1,7 @@
 {
   "__schema_version": 2,
-  "appdatadir": "Committee of Zero\\CCSteam",
-  "patchName": "CHAOS;CHILD Improvement Patch (Steam) (2.2.0)",
+  "appdatadir": "Committee of Zero\\CCGOG",
+  "patchName": "CHAOS;CHILD Improvement Patch (GOG) (2.2.0)",
   "patchVersion": "2.2.0",
   "base": {
     "hookText": true,
@@ -25,7 +25,7 @@
     "customInstGetDicGroup": "user1",
     "customInstGetDicOp": 38,
     "blockingKeyWaitTimer": true,
-    "hijackLauncher": "LauncherC0.exe",
+    "hijackLauncher": "launcher.exe",
     "fmv": {
       "fonts": [
         "SoukouMincho.ttf",
