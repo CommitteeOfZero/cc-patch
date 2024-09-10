@@ -1,16 +1,42 @@
-CHAOS;CHILD Steam Patch
+CHAOS;CHILD Improvement Patch (Steam)
 Committee of Zero
-Version 1.12 - May 21, 2019
+Version 2.1.0 - September 14th, 2024
 ==============================
-http://sonome.dareno.me
+https://sonome.dareno.me
 https://twitter.com/CommitteeOf0
 https://discord.gg/rq4GGCh
 https://github.com/CommitteeOfZero
+https://www.youtube.com/@committeeofzero
+https://www.twitch.tv/CommitteeOfZero
 ==============================
 
 See http://sonome.dareno.me/projects/chaoschild-steam.html for details, contact information and further instructions.
 
 For troubleshooting, please come to our Discord. You can always find the latest version of the patch at https://github.com/CommitteeOfZero/cc-patch/releases
+
+==============================
+Changes from 2.0.1:
+==============================
+
+* GOG compatibility.
+* Minor text and consistency fixes.
+* Custom Steam assets added.
+
+==============================
+Changes from 2.0:
+==============================
+
+* Minor text and consistency fixes.
+* The title menu's logo is now properly translated.
+
+==============================
+Changes from 1.12:
+==============================
+
+* A full proofreading pass of the game has been completed, fixing large amounts of incorrect terminology, inaccuracies, inconsistencies, as well as improving general readability. Some moderate translation checking was done as well.
+* The TIPS have received a full translation check and editing pass.
+* Terminology has been made consistent with our CHAOS;HEAD NOAH translation and all our other patches.
+* Restored Japanese honorifics.
 
 ==============================
 Changes from 1.11:
@@ -54,6 +80,20 @@ Changes from 1.0:
 Credits:
 ==============================
 
+Translation:
+* Rain
+* ItsRigs
+* MrComputerRevo
+* Ice
+* ChrisGLink
+* Enorovan
+
+Editing:
+* Kumin
+* Discontinuous Qualia
+* ChrisGLink
+* Spider
+
 Image editing:
 * Cypert
 * dusk
@@ -62,28 +102,25 @@ Image editing:
 * Kumin
 * Raykable
 * Zips
+* Enorovan
+* Rile_Zugo
 
 Hacking:
 * SomeAnon
 * daxxy
 * MrComputerRevo
 * JoseJL
-
-Editing:
-* Kumin
-* Discontinuous Qualia
-
-Translation:
-* Rain
-* ItsRigs
-* MrComputerRevo
-* Ice
+* Enorovan
 
 Subtitles:
 * zahj
 
+QC:
+* Spider
+
 Chief Masochism Officer:
 * MrComputerRevo
+* Enorovan (abdication)
 
 Masochism Deputies:
 * Raniel

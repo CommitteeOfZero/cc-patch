@@ -1,6 +1,6 @@
 @echo off
 pushd build
-call vcvarsall.bat
+call vcvarsall.bat x86
 set CL=/FC %CL%
 REM WARNING
 REM Every time scriptdebug is toggled, build/ needs to be cleaned
