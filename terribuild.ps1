@@ -4,21 +4,21 @@
 
 try {
     . ".\config.ps1"
-} catch {
+}
+catch {
     throw "Please put a config.ps1 from the provided config.ps1.sample in the repository root, and run this script from there."
 }
 
 # EXE metadata configuration
-$version_string = "1.12"
+$version_string = "2.2.0"
 $tool_icon = "CoZIcon.ico"
 $game_icon = "LauncherIcon.ico"
 $publisher = "Committee of Zero"
-$product_name = "Chaos;Child Steam Patch"
+$product_name = "CHAOS;CHILD Improvement Patch (Steam)"
 
 # Code
 
-function SetInstallerExeMetadata
-{
+function SetInstallerExeMetadata {
     param ([string]$exePath)
     $originalFilename = (Get-Item $exePath).Name
     .\rcedit-x86.exe $exePath `
@@ -34,8 +34,7 @@ function SetInstallerExeMetadata
         --set-version-string "ProductName" "$product_name Installer" `
         --set-version-string "ProductVersion" "$version_string"
 }
-function SetUninstallerExeMetadata
-{
+function SetUninstallerExeMetadata {
     param ([string]$exePath)
     $originalFilename = (Get-Item $exePath).Name
     .\rcedit-x86.exe $exePath `
@@ -52,8 +51,7 @@ function SetUninstallerExeMetadata
         --set-version-string "ProductVersion" "$version_string"
 }
 
-function SetRealbootExeMetadata
-{
+function SetRealbootExeMetadata {
     param ([string]$exePath)
     $originalFilename = (Get-Item $exePath).Name
     .\rcedit-x86.exe $exePath `
@@ -70,17 +68,15 @@ function SetRealbootExeMetadata
         --set-version-string "ProductVersion" "$version_string"
 }
 
-function GenerateEnscriptToc
-{
+function GenerateEnscriptToc {
     param ([string]$tocPath, [string]$scriptsPath)
-    $inToc = Import-CSV .\script_toc.csv -header Id,FilenameOnDisk,FilenameInArchive
+    $inToc = Import-CSV .\script_toc.csv -header Id, FilenameOnDisk, FilenameInArchive
     $jw = New-Object Newtonsoft.Json.JsonTextWriter(New-Object System.IO.StreamWriter($tocPath))
     $jw.Formatting = [Newtonsoft.Json.Formatting]::Indented
     $jw.Indentation = 2
     $jw.IndentChar = ' '
     $jw.WriteStartArray();
-    foreach ($entry in $inToc)
-    {
+    foreach ($entry in $inToc) {
         $jw.WriteStartObject();
         $jw.WritePropertyName("id");
         $jw.WriteValue([int]$entry.Id);
@@ -97,8 +93,7 @@ function GenerateEnscriptToc
 
 # END CONFIG
 
-function PrintSection
-{
+function PrintSection {
     param ([string]$desc)
     $line = "------------------------------------------------------------------------"
     $len = (($line.length, $desc.legnth) | Measure -Max).Maximum
@@ -123,6 +118,13 @@ Remove-Item -Force -Recurse -ErrorAction SilentlyContinue .\temp
 New-Item -ItemType directory -Path .\temp | Out-Null
 Remove-Item -Force -Recurse -ErrorAction SilentlyContinue .\symbols
 New-Item -ItemType directory -Path .\symbols | Out-Null
+
+PrintSection "Pulling latest script changes"
+cd coalesc3
+& git pull
+cd data/chaos_child/txt_eng
+& git pull
+cd ../../../..
 
 PrintSection "Building LanguageBarrier as $languagebarrier_configuration"
 & "$msbuild" "$languagebarrier_dir\LanguageBarrier\LanguageBarrier.vcxproj" "/p:Configuration=$languagebarrier_configuration"
@@ -149,46 +151,11 @@ Move-Item -Force .\*.dds ..\..\DIST\languagebarrier\
 Move-Item -Force .\widths.bin ..\..\DIST\languagebarrier\widths.bin
 cd ..\..
 
-PrintSection "Building SciAdv.Net"
-cd SciAdv.Net
-& .\build.cmd
-cd ..
-
 PrintSection "Patching scripts"
-New-Item -ItemType directory -Path .\temp\patched_script_archive | Out-Null
-copy script_archive_steam\*.scx temp\patched_script_archive
-$scripts = gci temp\patched_script_archive
-foreach ($script in $scripts)
-{
-    $patches = gci .\cc-script-patches\$($script.Name).*.vcdiff | Sort
-    foreach ($patch in $patches)
-    {
-        $scriptPath = $script.FullName
-        .\xdelta3.exe -d -s "$scriptPath" "$($patch.FullName)" "$scriptPath.tmp"
-        Remove-Item $scriptPath
-        Move-Item -Path "$scriptPath.tmp" -Destination "$scriptPath"
-    }
-}
-.\SciAdv.Net\bin\Release\Tools\SC3Tools\sc3tools.exe replace-text -o temp\patched_edited_script_archive temp\patched_script_archive\*.scx cc-scripts\*.txt chaoschild
-.\SciAdv.Net\bin\Release\Tools\SC3Tools\sc3tools.exe replace-text -o temp\patched_edited_script_archive_c temp\patched_script_archive\*.scx cc-scripts-consistency\*.txt chaoschild
-New-Item -ItemType directory -Path .\temp\merged_patches | Out-Null
-New-Item -ItemType directory -Path .\temp\merged_patches_c | Out-Null
-$scripts = gci script_archive_steam\*.scx
-foreach ($script in $scripts)
-{
-    .\xdelta3.exe -e -S none -s "$($script.FullName)" "temp\patched_edited_script_archive\$($script.Name)" "temp\merged_patches\$($script.Name).vcdiff"
-    .\xdelta3.exe -e -S none -s "$($script.FullName)" "temp\patched_edited_script_archive_c\$($script.Name)" "temp\merged_patches_c\$($script.Name).vcdiff"
-}
-
-PrintSection "Generating enscript TOC for installer"
-GenerateEnscriptToc -tocPath "$(pwd)\installer\userdata\enscriptToc.json" -scriptsPath "temp\patched_edited_script_archive"
-GenerateEnscriptToc -tocPath "$(pwd)\installer\userdata\enscriptTocC.json" -scriptsPath "temp\patched_edited_script_archive_c"
-
-# REMOVE FOR PUBLISHING
-# Write-Output "========================================================================"
-# Write-Output "Packing enscript.mpk"
-# python .\mpkpack.py script_toc.csv DIST\languagebarrier\enscript.mpk
-# Write-Output "========================================================================"
+cd coalesc3
+python build.py chaos_child windows eng --clean
+Copy-Item .\out\chaos_child\windows_eng\enscript.mpk ..\DIST\languagebarrier\
+cd ..
 
 PrintSection "Packing c0data.mpk"
 python .\mpkpack.py c0data_toc.csv DIST\languagebarrier\c0data.mpk
@@ -198,6 +165,13 @@ echo $null > .\DIST\languagebarrier\stringReplacementTable.bin
 
 PrintSection "Copying content to DIST"
 Copy-Item -Recurse -Force .\content\* .\DIST
+# DXVK
+Move-Item .\DIST\d3d9 ".\DIST\CHILD"
+Move-Item .\DIST\d3d10 ".\DIST\CHILD"
+Move-Item .\DIST\d3d10_1 ".\DIST\CHILD"
+Move-Item .\DIST\d3d10core ".\DIST\CHILD"
+Move-Item .\DIST\d3d11 ".\DIST\CHILD"
+Move-Item .\DIST\dxgi ".\DIST\CHILD"
 
 
 PrintSection "Building and copying realboot"
@@ -242,15 +216,15 @@ cmd /c copy /b .\temp\InstallerExtractor.exe + .\temp\sfxbase.7z DIST\Installer.
 
 PrintSection "Packing installer"
 cd temp
-$patchFolderName = "CCPatch-v$version_string-Setup"
+$patchFolderName = "CCSteamPatch-v$version_string-Setup"
 New-Item -ItemType directory -Path $patchFolderName | Out-Null
 cd $patchFolderName
 New-Item -ItemType directory -Path DIST | Out-Null
 Move-Item -Force ..\..\DIST\* .\DIST
-Move-Item -Force ..\merged_patches .
-Move-Item -Force ..\merged_patches_c .
+New-Item -ItemType directory -Path STEAMGRID | Out-Null
+Copy-Item -Recurse -Force  ..\..\content_steamgrid\* .\STEAMGRID
 Move-Item -Force ..\..\installer\deploy\* .
-Move-Item -Force .\noidget.exe .\CCPatch-Installer.exe
+Move-Item -Force .\noidget.exe .\CCSteamPatch-Installer.exe
 cd ..\..\DIST
 7z a -mx=5 "$patchFolderName.zip" "..\temp\$patchFolderName"
 cd ..

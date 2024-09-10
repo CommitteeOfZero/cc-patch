@@ -1,0 +1,83 @@
+{
+    "__schema_version": 1,
+    "signatures": {
+        "game": {
+            "GSLfontStretchF": {
+                "occurrence": 0,
+                "offset": 0,
+                "pattern": "FF 03 01 D1 FD 7B 03 A9 FD C3 00 91 29 5C 00 12 0A E0 BF 12"
+            },
+            "GSLfontStretchWithMaskF": {
+                "occurrence": 0,
+                "offset": 0,
+                "pattern": "FF 03 03 D1 FD 7B 09 A9 FD 43 02 91 F5 53 00 F9 F4 4F 0B A9 B0 3B"
+            },
+            "GSLfontStretchWithMaskExF": {
+                "occurrence": 0,
+                "offset": 0,
+                "pattern": "FF 03 03 D1 FD 7B 09 A9 FD 43 02 91 F5 53 00 F9 F4 4F 0B A9 B0 3B 40 BD A6 1F"
+            },
+            "ChkViewDic": {
+                "occurrence": 0,
+                "offset": 0,
+                "pattern": "8A 1B 00 90 4A 99 43 F9 08 04 00 0B 08 01 01 0B 09"
+            },
+            "SetFlag": {
+                "occurrence": 0,
+                "offset": 0,
+                "pattern": "09 08 00 12 2A 00 80 52 49 21 C9 1A CA 19 00 D0 4A A9 40"
+            },
+            "MEStvramDrawEx": {
+                "occurrence": 0,
+                "offset": 0,
+                "pattern": "FF 43 02 D1 E8 13 00 FD FD 7B 03 A9 FD C3 00 91 FC 6F 04 A9 FA 67 05 A9 F8 5F 06 A9 F6 57 07 A9 F4 4F 08 A9 A3 83 1F B8"
+            },
+            "CalMain": {
+                "occurrence": 0,
+                "offset": 0,
+                "pattern": "FF 43 02 D1 FD 7B 03 A9 FD C3 00 91 FC 6F 04 A9 FA 67 05 A9 F8 5F 06 A9 F6 57"
+            },
+            "fontAlinePtr": {
+                "occurrence": 0,
+                "offset": 0,
+                "pattern": "E8 0F 19 FC FD 7B 01 A9 FD 43 00 91 FC 6F 02 A9 FA 67 03 A9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 9F 00 00 71",
+                "expr": "(ptr + 0x9C, 4)"
+            },
+            "fontAline2Ptr": {
+                "occurrence": 0,
+                "offset": 0,
+                "pattern": "E8 0F 19 FC FD 7B 01 A9 FD 43 00 91 FC 6F 02 A9 FA 67 03 A9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 9F 00 00 71",
+                "expr": "(ptr + 0x1b4, 4)"
+            },
+            "englishOnlyOffsetTable": {
+                "occurrence": 0,
+                "offset": 0,
+                "pattern": "E8 0F 19 FC FD 7B 01 A9 FD 43 00 91 FC 6F 02 A9 FA 67 03 A9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 9F 00 00 71",
+                "expr": "*(ptr + 0x1b4, 4) + 400"
+            },
+            "SCRuser1": {
+                "occurrence": 0,
+                "offset": 0,
+                "pattern": "FD 7B BC A9 F7 0B 00 F9 FD 03 00 91 F6 57 02 A9 F4 4F 03 A9 54 1A 00 90 94 DE 40 F9 55 1A 00 90 56",
+                "expr": "*(ptr + 0x1C, 8)"
+            },
+            "SCRgraph": {
+                "occurrence": 0,
+                "offset": 0,
+                "pattern": "FD 7B BC A9 F7 0B 00 F9 FD 03 00 91 F6 57 02 A9 F4 4F 03 A9 54 1A 00 90 94 DE 40 F9 55 1A 00 90 56",
+                "expr": "*(ptr + 0x20, 0xC)"
+            },
+            "SCRsystem": {
+                "occurrence": 0,
+                "offset": 0,
+                "pattern": "FD 7B BC A9 F7 0B 00 F9 FD 03 00 91 F6 57 02 A9 F4 4F 03 A9 54 1A 00 90 94 DE 40 F9 55 1A 00 90 56",
+                "expr": "*(ptr + 0x28, 0xC)"
+            },
+            "audioLoweringAddr": {
+                "occurrence": 0,
+                "offset": 0,
+                "pattern": "6B 7D 01 53"
+            }
+        }
+    }
+}

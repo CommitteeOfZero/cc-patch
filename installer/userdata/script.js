@@ -4,11 +4,6 @@ var licenseText = ng.fs.global().readTextFile(':/userdata/LICENSE.txt');
 var product =
     JSON.parse(ng.fs.global().readTextFile(':/userdata/product.json'));
 
-var enscriptToc =
-    JSON.parse(ng.fs.global().readTextFile(':/userdata/enscriptToc.json'));
-var enscriptTocC =
-    JSON.parse(ng.fs.global().readTextFile(':/userdata/enscriptTocC.json'));
-
 var state = {};
 state.discovery = {
   run: false,
@@ -173,45 +168,12 @@ function DoTx() {
           'dinput8', 'native,builtin');
     }
   }
+// We're replacing Steam Grid assets for them to be spoiler-free and cool
+  var steamGridSection = ng.tx.tx().addSection('Replacing Steam Grid assets');
+  steamGridSection.copyFiles('%STEAMGRID_CONTENT%/*', '%STEAM_PATH%/userdata/%STEAM_ACTIVE_USER%/config/grid')
 
   var patchContentSection = ng.tx.tx().addSection('Copying patch content');
   patchContentSection.copyFiles('%PATCH_CONTENT%/*', '%GAME_PATH%');
-
-  var applyPatchesSection = ng.tx.tx().addSection('Applying patches');
-
-  var buildScriptMpk =
-      function(scriptMpkPath, scriptMpkToc, scriptDiffsPath) {
-    var scriptMpk = applyPatchesSection.buildMpk(scriptMpkPath);
-    scriptMpkToc.forEach(function(entry) {
-      var diffPath = scriptDiffsPath + '/' + entry.filename + '.vcdiff';
-      if (ng.fs.global().pathIsFile(diffPath)) {
-        var stream = ng.tx.xdelta3Stream(
-            ng.tx.mpkInputStream(product.origScriptArchivePath, entry.id),
-            ng.tx.fileStream(diffPath));
-        scriptMpk.addEntry({
-          id: entry.id,
-          name: entry.filename,
-          source: stream,
-          displaySize: entry.size
-        });
-      } else {
-        scriptMpk.addEntry({
-          id: entry.id,
-          name: entry.filename,
-          source: ng.tx.mpkInputStream(product.origScriptArchivePath, entry.id),
-          displaySize: entry.size
-        });
-      }
-    });
-  }
-
-      applyPatchesSection.log('Building patched script archive...');
-  buildScriptMpk('%ENSCRIPT_MPK%', enscriptToc, '%SCRIPT_DIFFS%');
-
-  applyPatchesSection.log(
-      'Building patched script archive (#consistency version)...');
-  buildScriptMpk(
-      '%ENSCRIPT_CONSISTENCY_MPK%', enscriptTocC, '%SCRIPT_CONSISTENCY_DIFFS%');
 
   if (state.shouldCreateDesktopShortcut ||
       state.shouldCreateStartMenuShortcut) {
@@ -389,6 +351,15 @@ switch (ng.systemInfo.platform()) {
           ng.win32.registry().value(
               ng.win32.RootKey.HKCU, 'Software\\Valve\\Steam', true,
               'SteamPath'));
+    }
+    if (ng.win32.registry().valueExists(
+            ng.win32.RootKey.HKCU, 'Software\\Valve\\Steam\\ActiveProcess', true,
+            'ActiveUser')) {
+      ng.fs.global().setMacro(
+          'STEAM_ACTIVE_USER',
+          ng.win32.registry().value(
+              ng.win32.RootKey.HKCU, 'Software\\Valve\\Steam\\ActiveProcess', true,
+              'ActiveUser'));
     }
     break;
 }
