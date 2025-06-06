@@ -180,13 +180,13 @@ PrintSection "Generating enscript TOC for installer"
 GenerateEnscriptToc -tocPath "$(pwd)\installer\userdata\enscriptToc.json" -scriptsPath "temp\patched_edited_script_archive"
 
 # REMOVE FOR PUBLISHING
-# Write-Output "========================================================================"
-# Write-Output "Packing enscript.mpk"
-# python .\mpkpack.py script_toc.csv DIST\languagebarrier\enscript.mpk
-# Write-Output "========================================================================"
+Write-Output "========================================================================"
+Write-Output "Packing enscript.mpk"
+python .\mpkpack.py script_toc.csv DIST\languagebarrier\enscript.mpk
+Write-Output "========================================================================"
 
 PrintSection "Packing c0data.mpk"
-py -2 .\mpkpack.py c0data_toc.csv DIST\languagebarrier\c0data.mpk
+python .\mpkpack.py c0data_toc.csv DIST\languagebarrier\c0data.mpk
 
 # LanguageBarrier currently needs this file to be present even if no string redirections are configured
 echo $null > .\DIST\languagebarrier\stringReplacementTable.bin
