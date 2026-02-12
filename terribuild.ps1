@@ -231,3 +231,20 @@ cd ..
 
 PrintSection "Removing temp"
 Remove-Item -Force -Recurse .\temp
+Remove-Item -Force -Recurse .\installer\build\debug
+Remove-Item -Force -Recurse .\installer\build\release
+Remove-Item -Force -Recurse .\installer\build\.qmake.stash
+Remove-Item -Force -Recurse .\installer\build\Makefile
+Remove-Item -Force -Recurse .\installer\build\Makefile.Debug
+Remove-Item -Force -Recurse .\installer\build\Makefile.Release
+Remove-Item -Force -Recurse .\installer\build\ui_installerwindow.h
+Remove-Item -Force -Recurse .\installer\deploy
+Remove-Item -Force -Recurse .\installer\deployUninstaller
+Remove-Item -Force -Recurse .\launcher\build\debug
+Remove-Item -Force -Recurse .\launcher\build\release
+Remove-Item -Force -Recurse .\launcher\build\.qmake.stash
+Remove-Item -Force -Recurse .\launcher\build\Makefile
+Remove-Item -Force -Recurse .\launcher\build\Makefile.Debug
+Remove-Item -Force -Recurse .\launcher\build\Makefile.Release
+Remove-Item -Force -Recurse .\launcher\build\ui_launcherwindow.h
+Remove-Item -Force -Recurse .\launcher\deploy
