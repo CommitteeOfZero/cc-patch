@@ -135,7 +135,7 @@ Copy-Item $languagebarrier_dir\languagebarrier\$languagebarrier_configuration\*.
 Copy-Item -Recurse $languagebarrier_dir\languagebarrier\$languagebarrier_configuration\languagebarrier .\DIST
 New-Item -ItemType directory -Path .\DIST\CHILD | Out-Null
 # TODO how does wine handle this?
-Copy-Item .\DIST\cryptbase.dll .\DIST\CHILD\
+Copy-Item .\DIST\dinput8.dll .\DIST\CHILD\
 # Reported necessary for some users, otherwise:
 # "Procedure entry point csri_renderer_default could not be located in ...\CHILD\DINPUT8.dll"
 Copy-Item .\DIST\VSFilter.dll .\DIST\CHILD\
